@@ -1,23 +1,57 @@
 <!DOCTYPE html>
 <html lang="pl">
-	<head>
-		<title>Kartoteka Zegarków</title>
-		<meta charset="utf-8">
-		<meta name="description" content="Kartoteka Zegarków - uporządkuj swój zbiór.">
-		<meta name="keywords" content="greenmag, kartoteka zegarków">
-		<link rel="icon" href="ikona.png" type="image/png">
-		<link rel="stylesheet" href="style.css">
-	</head>
-	<body>
-		<div>
-			<img src="ikona.png">
-			<b>Kartoteka Zegarków</b><br>
-			pobierz: <a href="kartoteka.zip">kartoteka.zip</a><br>
-			kompilacja: 250831<br>
-			rozmiar: 848 KB<br>
-			licencja: darmowa<br>
-			system: windows<br>
-			autor: greenmag
-		</div>
-	</body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartoteka Zegarków</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="ikona.png" type="image/png">
+    <style>
+        body {
+            font-family: 'Orbitron', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-[#2b2f3a] via-[#3d4452] to-[#1e2128] text-white">
+    <div class="flex flex-col items-center justify-center min-h-screen p-6">
+        <!-- Logo i nazwa -->
+        <div class="flex flex-col items-center mb-8 animate-fadeIn">
+
+            <h1 class="text-5xl font-extrabold text-blue-400 drop-shadow-lg mb-2">Kartoteka Zegarków</h1>
+            <p class="text-gray-300 text-lg">Najlepszy sposób na organizację Twojej kolekcji zegarków</p>
+        </div>
+
+        <!-- Informacje o aplikacji -->
+        <div class="bg-white/10 backdrop-blur-md rounded-3xl shadow-2xl p-8 w-full max-w-lg border border-blue-500/30 transform hover:scale-105 transition duration-300">
+            <ul class="space-y-4 text-lg">
+                <li>⚙️ Numer kompilacji : 250831</li>
+                <li>👤 Autor : Mariusz Froń</li>
+                <li>📜 Licencja : darmowa</li>
+                <li>💻 System: Windows</li>
+                <li>📦 Rozmiar pliku : 848 KB</li>
+            </ul>
+
+            <!-- Przycisk pobierania -->
+            <div class="mt-8 text-center">
+                <a href="kartoteka.zip" class="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-4 rounded-full text-xl font-bold shadow-xl hover:from-blue-600 hover:to-purple-700 transition transform hover:scale-110">⬇ Pobierz teraz</a>
+            </div>
+        </div>
+
+        <!-- Stopka -->
+        <footer class="mt-10 text-gray-400 text-sm">
+            &copy; 2025 Kartoteka Zegarków. Wszelkie prawa zastrzeżone.
+        </footer>
+    </div>
+
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fadeIn {
+            animation: fadeIn 1.5s ease-out;
+        }
+    </style>
+</body>
 </html>
