@@ -1,62 +1,90 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kartoteka Zegarków</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
-    <link rel="icon" href="ikona.png" type="image/png">
-    <style>
-	body {font-family: "Goldman", sans-serif;}
-    </style>
-</head>
-<body class="bg-gradient-to-br from-[#2b2f3a] via-[#3d4452] to-[#1e2128] text-white">
-    <div class="flex flex-col items-center justify-center min-h-screen p-6">
-        <!-- Logo i nazwa -->
-        <div class="flex flex-col items-center mb-8 animate-fadeIn">
-
-            <h1 class="text-5xl font-extrabold text-blue-400 drop-shadow-lg mb-2">Kartoteka Zegarków</h1>
-            <p class="text-gray-300 text-lg">Najlepszy sposób na organizację Twojej kolekcji zegarków</p>
-        </div>
-
-        <!-- Informacje o aplikacji -->
-        <div class="bg-white/10 backdrop-blur-md rounded-3xl shadow-2xl p-8 w-full max-w-lg border border-blue-500/30 transform hover:scale-105 transition duration-111">
-            <ul class="space-y-4 text-lg">
-                <li>⚙️ Numer kompilacji : 250831</li>
-                <li>👤 Autor : Mariusz Froń</li>
-                <li>📜 Licencja : darmowa</li>
-                <li>💻 System: Windows</li>
-                <li>📦 Rozmiar pliku : 848 KB</li>
-            </ul>
-
-            <!-- Przycisk pobierania -->
-            <div class="mt-8 text-center">
-                <br><a href="kartoteka.zip" class="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-4 rounded-full text-xl font-bold shadow-xl hover:from-blue-600 hover:to-purple-700 transition transform hover:scale-110">⬇ Pobierz teraz</a><br><br>
-            </div>
-        </div>
-
-        <!-- Stopka -->
-        <footer class="mt-10 text-gray-400 text-sm">
-            &copy; 2025 Kartoteka Zegarków. Wszelkie prawa zastrzeżone.
-        </footer>
-    </div>
-
-    <style>
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(-10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        .animate-fadeIn {
-            animation: fadeIn 1s ease-out;
-        }
-    </style>
-</body>
-
+	<head>
+		<title>Kartoteka Zegarków</title>
+		<meta charset="utf-8">
+		<meta name="description" content="Kartoteka Zegarków - Najlepszy sposób na organizację Twojej kolekcji zegarków">
+		<meta name="keywords" content="greenmag, kartoteka zegarków, zegarki, zegarek, kolekcja, zbiór, program, software">
+		<link rel="icon" href="ikona.png" type="image/png">
+		<style>
+			@font-face
+				{
+					font-family:'Goldman';
+					src:url('Goldman-Regular.ttf');
+				}
+			*
+				{
+					margin:0px;
+					padding:0px;
+				}
+			html
+				{
+					height:100%;
+				}
+			body
+				{
+					height:100%;
+					display:flex;
+					flex-direction:column;
+					justify-content:center;
+					align-items:center;  
+					font-family:'Goldman';
+					background-image:linear-gradient(155deg, #3B3B3B, #343946, #3B3B3B);
+					cursor:default;
+				}
+			.s1
+				{
+					font-size:50px;
+					color:#60A5FA;
+					text-shadow: 0px 0px 10px #222222;
+				}
+			.s2
+				{
+					font-size:18px;
+					color:#D1D5DB;
+				}
+			.s3
+				{
+					font-size:14px;
+					color:#989FAA;
+				}
+			div
+				{
+					background-color:#4B515C;
+					font-size:18px;
+					color:#FFFFFF;
+					width:450px;
+					padding:33px;
+					margin:35px 0px;
+					line-height:2.3;
+					border-style:solid;
+					border-color:#49628E;
+					border-width:1px;
+					border-radius:20px;
+				}
+			a
+				{
+					display:block;
+					width:230px;
+					margin-top:20px;
+					font-size:22px;
+					border-radius:50px;
+					text-decoration:none;
+					color:#FFFFFF;
+					background-image:linear-gradient(90deg, #3C81F6, #9133E9);
+					box-shadow: 2px 2px 5px #333333;
+				}
+			a:hover
+				{
+					background-image:linear-gradient(90deg, #1166F4, #8D28E8);
+				{
+		</style>
+	</head>
+	<body>
+		<span class="s1">Kartoteka Zegarków</span>
+		<span class="s2">Najlepszy sposób na organizację Twojej kolekcji zegarków</span>
+		<div>⚙️&nbsp;&nbsp;Numer kompilacji : 250831<br>👤&nbsp;&nbsp;Autor : Mariusz Froń<br>📜&nbsp;&nbsp;Licencja : darmowa<br>💻&nbsp;&nbsp;System: Windows<br>📦&nbsp;&nbsp;Rozmiar pliku : 848 KB<br>
+		<center><a href="kartoteka.zip">⬇ Pobierz teraz</a></center></div>
+		<span class="s3">© 2025 Kartoteka Zegarków. Wszelkie prawa zastrzeżone.</span>
+	</body>
 </html>
-
-
-
-
-
-
