@@ -36,8 +36,8 @@ body		{
 		font-size:18px;
 		color:#D1D5DB;
 		opacity:0;
-		animation:Show 1s linear forwards;
-		animation-delay:1s;
+		animation:Show 1.5s linear forwards;
+		animation-delay:1.25s;
 		}
 
 .s3		{
@@ -45,7 +45,7 @@ body		{
 		color:#989FAA;
 		opacity:0;
 		animation:Show 3s ease-out forwards;
-		animation-delay:3s;
+		animation-delay:2.5s;
 		}
 
 div		{
@@ -62,7 +62,7 @@ div		{
 		border-radius:20px;
 		opacity:0;
 		animation:Show 3s linear forwards;
-		animation-delay:1s;
+		animation-delay:1.25s;
 		}
 
 a		{
