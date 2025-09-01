@@ -37,7 +37,7 @@ body		{
 		color:#D1D5DB;
 		opacity:0;
 		animation:Show 1.5s linear forwards;
-		animation-delay:1.25s;
+		animation-delay:1.5s;
 		}
 
 .s3		{
@@ -62,7 +62,7 @@ div		{
 		border-radius:20px;
 		opacity:0;
 		animation:Show 3s linear forwards;
-		animation-delay:1.25s;
+		animation-delay:1.5s;
 		}
 
 a		{
