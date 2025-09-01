@@ -42,7 +42,7 @@ body
 		font-size:18px;
 		color:#D1D5DB;
 		opacity:0;
-		animation:Show 1.5s linear forwards;
+		animation:Show 2s linear forwards;
 		animation-delay:1.5s;
 		}
 
@@ -51,8 +51,8 @@ body
 		font-size:14px;
 		color:#989FAA;
 		opacity:0;
-		animation:Show 2.5s ease-out forwards;
-		animation-delay:2.5s;
+		animation:Show 3s ease-out forwards;
+		animation-delay:3s;
 		}
 
 div		
