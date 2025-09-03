@@ -34,7 +34,7 @@ body
 		text-shadow: 0px 0px 10px #222222;
 		transform:translateY(-200%);
 		opacity:0;
-		animation:slideDown 1s ease-out forwards;
+		animation:slideDown 1s forwards;
 		}
 
 .s2		
@@ -42,8 +42,7 @@ body
 		font-size:18px;
 		color:#D1D5DB;
 		opacity:0;
-		animation:Show 2s linear forwards;
-		animation-delay:1.25s;
+		animation:Show 3s forwards 1.25s;
 		}
 
 .s3		
@@ -51,8 +50,7 @@ body
 		font-size:14px;
 		color:#989FAA;
 		opacity:0;
-		animation:Show 3s ease-out forwards;
-		animation-delay:3s;
+		animation:Show 3s forwards 3s;
 		}
 
 div		
@@ -69,30 +67,30 @@ div
 		border-width:2px;
 		border-radius:20px;
 		opacity:0;
-		animation:Show 3s linear forwards;
-		animation-delay:1.25s;
+		animation:Show 3s forwards 1.25s;
 		}
 
 a		
 		{
 		display:block;
 		width:230px;
-		margin:20px 0px 5px 0px;
+		margin:20px auto 5px auto;
 		font-size:22px;
 		border-radius:50px;
 		text-decoration:none;
+		text-align:center;
 		color:#CCCCCC;
 		box-shadow:0px 0px 5px #333333;
-		background:linear-gradient(to right, #3C81F6, #881EE8, #1166F4);
+		background:linear-gradient(to right, #4597FA, #881EE8, #DF7000);
 		background-size:200% 100%;
-		background-position:0% 0%;
-		transition:all 1s linear;
+		background-position:left center;
+		transition:all 0.5s;
 		}
 
 a:hover		
 		{
 		box-shadow:0px 0px 10px #222222;
-		background-position:100% 0%;
+		background-position:right center;
 		color:#FFFFFF;
 		}
 
