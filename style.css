@@ -42,7 +42,7 @@ body
 		font-size:18px;
 		color:#D1D5DB;
 		opacity:0;
-		animation:Show 3s forwards 1.25s;
+		animation:Show 3s forwards 1s;
 		}
 
 .s3		
@@ -67,7 +67,7 @@ div
 		border-width:2px;
 		border-radius:20px;
 		opacity:0;
-		animation:Show 3s forwards 1.25s;
+		animation:Show 3s forwards 1s;
 		}
 
 a		
