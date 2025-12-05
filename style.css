@@ -24,13 +24,15 @@ body
 		align-items:center;  
 		font-family:'goldman';
 		background-image:linear-gradient(155deg, #000000, #343946, #4B515C);
+		background-repeat:no-repeat;
+		background-attachment:fixed;
 		cursor:default;
 		}
 
 .s1		
 		{
 		font-size:50px;
-		color:#60A5FA;
+		color:#5DADEC;
 		text-shadow: 0px 0px 10px #222222;
 		transform:translateY(-200%);
 		opacity:0;
@@ -63,8 +65,8 @@ div
 		margin:35px 0px;
 		line-height:2.3;
 		border-style:solid;
-		border-color:#49628E;
-		border-width:2px;
+		border-color:#5DADEC;
+		border-width:1px;
 		border-radius:20px;
 		opacity:0;
 		animation:Show 3s forwards 1s;
@@ -79,11 +81,12 @@ a
 		border-radius:50px;
 		text-decoration:none;
 		text-align:center;
-		color:#CCCCCC;
+		color:#4B515C;
 		box-shadow:0px 0px 5px #333333;
 		background-image:linear-gradient(to right, #4597FA, #881EE8, #DF7000);
 		background-size:200% 100%;
 		background-position:left center;
+		color:#FFFFFF;
 		transition:all 0.5s;
 		}
 
@@ -92,7 +95,6 @@ a:hover
 		text-shadow: 0px 0px 3px #111111;
 		box-shadow:0px 0px 10px #333333;
 		background-position:right center;
-		color:#FFFFFF;
 		}
 
 @keyframes slideDown
