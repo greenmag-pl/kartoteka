@@ -72,7 +72,8 @@ $(function()
 		const value = url.searchParams.get('klucz');
 		let result = url.origin + url.pathname;
 		let beforeSlash = $(this).text().split('/')[0];
-		if (value) result += '?klucz=' + value + '&'; else result += '?';
+		if (value) result += '?klucz=' + value + '&';
+		else result += '?';
 		result += 'karta=' + beforeSlash + '&wstecz';
 		if (navigator.share) navigator.share({title: $('#opis div:first').text(), url: result});
 		else navigator.clipboard.writeText(result);
