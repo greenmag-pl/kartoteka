@@ -57,6 +57,20 @@ body
 	animation:slideDown 0.33s forwards;
 	}
 
+#tytul>span
+	{
+	display:block;
+	margin-top:10px;
+	padding-top:10px;
+	letter-spacing:0px;
+	font-family:arial;
+	font-size:30px;
+	color:gray;
+	border-style:solid none none none;
+	border-color:#434955;
+	border-width:1px;
+	}
+
 div[id^="karta"]
 	{
 	display:inline-block;
@@ -196,5 +210,5 @@ p
 	{
 	font-family:inconsolata;
 	font-size:30px;
-	color:gray;
+	color:silver;
 	}
