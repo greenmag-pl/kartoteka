@@ -3,7 +3,7 @@ $(function()
 
 	let userPass = new URLSearchParams(location.search).get("klucz");
 	if (userPass === null) userPass = "";
-	$.get("klucz.txt", function(realPass)
+	$.get("klucz", function(realPass)
 	{
 		if (userPass !== realPass) $('body').html('<img src="stop.png"><p>Brak dostępu.</p>');
 
