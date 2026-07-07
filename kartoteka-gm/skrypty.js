@@ -9,6 +9,25 @@ $(function()
 
 	});
 
+	$('div[id^="karta"]')
+	.wrapInner('<span></span>')
+	.css('background-image', function()
+	{
+		return 'url("karty/' + this.id + '/obraz.jpg")';
+	})
+	.click(function()
+	{
+		const nazwa = $(this).find('span').text();
+		$.get('karty/' + this.id + '/dane.txt', function(data)
+		{
+			$('#opis').html('<div>' + nazwa + '</div>' + data + '<button>Wstecz</button>').slideDown('fast', function ()
+			{
+				$('#opis>button').fadeIn('normal');
+			}).scrollTop(0);
+			$('body').css('overflow', 'hidden');
+		});
+	});
+
 	const userCard = new URLSearchParams(location.search).get("karta");
 	if (userCard)
 	{
@@ -40,25 +59,6 @@ $(function()
 	.click(function()
 	{
 		window.location.href = 'https://greenmag-pl.github.io/kartoteka';
-	});
-
-	$('div[id^="karta"]')
-	.wrapInner('<span></span>')
-	.css('background-image', function()
-	{
-		return 'url("karty/' + this.id + '/obraz.jpg")';
-	})
-	.click(function()
-	{
-		const nazwa = $(this).find('span').text();
-		$.get('karty/' + this.id + '/dane.txt', function(data)
-		{
-			$('#opis').html('<div>' + nazwa + '</div>' + data + '<button>Wstecz</button>').slideDown('fast', function ()
-			{
-				$('#opis>button').fadeIn('normal');
-			}).scrollTop(0);
-			$('body').css('overflow', 'hidden');
-		});
 	});
 
 	$(document).on('click', '#opis>button', function()
