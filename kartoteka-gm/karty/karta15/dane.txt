@@ -1,21 +1,23 @@
-<div>OGÓLNE<span>15/16</span></div>
-Producent: Vostok<br>
-Model: Amfibia Classic (Beczka)<br>
-Referencja: 090914M<br>
-Data zakupu: 17.12.2021<br>
+<div>OGÓLNE<span>15/17</span></div>
+Producent: Steinhart<br>
+Model: Nav. B-Uhr<br>
+Rok produkcji: 2016/2017<br>
+Data zakupu: 25.08.2017<br>
 <div>MECHANIZM</div>
-Typ: Automatyczny<br>
-Producent: Vostok<br>
-Kaliber: 2415<br>
+Typ: Manualny<br>
+Producent: ETA<br>
+Kaliber: Unitas 6497-1<br>
 &nbsp;- Dokręcanie<br>
+Ostatni serwis: 28.05.2026<br>
 <div>KOPERTA</div>
-Materiał: Stal szlachetna<br>
-Szkło: Hesalitowe<br>
+Materiał: Brąz<br>
+Szkło: Szafirowe<br>
+&nbsp;- Antyrefleks wewnętrzny<br>
 Dekiel: Zakręcany<br>
-Wodoszczelność: 200m<br>
-&nbsp;- Zakręcana koronka<br>
-Szerokość: 41mm<br>
-Wysokość L2L: 48mm<br>
-Grubość: 15mm<br>
+&nbsp;- Przeszklony<br>
+Wodoszczelność: 30m<br>
+Szerokość: 44mm<br>
+Wysokość L2L: 52mm<br>
+Grubość: 14,5mm<br>
 Mocowanie paska: 22mm<br>
-&nbsp;- Bransoleta w zestawie<br>
+Waga: 107g<br>

@@ -1,26 +1,17 @@
-<div>OGÓLNE<span>2/16</span></div>
-Producent: Casio<br>
-Model: Vintage<br>
-Referencja: B640WD-1AVEF<br>
+<div>OGÓLNE<span>2/17</span></div>
+Producent: Adriatica<br>
+Model: Retro<br>
+Referencja: A1081.5156Q<br>
 &nbsp;- Zegarek poza kolekcją<br>
 <div>MECHANIZM</div>
 Typ: Kwarcowy<br>
-Producent: Casio<br>
-&nbsp;- Dzień miesiąca<br>
-&nbsp;- Dzień tygodnia<br>
-&nbsp;- Wieczny kalendarz<br>
-&nbsp;- Budzik<br>
-&nbsp;- Repetier<br>
-&nbsp;- Chronograf<br>
+Producent: Ronda<br>
+Kaliber: 1069<br>
 <div>KOPERTA</div>
-Materiał: Tworzywo<br>
-&nbsp;- Powłoka<br>
-Szkło: Hesalitowe<br>
-Dekiel: Przykręcany<br>
-Wodoszczelność: 50m<br>
-Szerokość: 35mm<br>
-Wysokość L2L: 38,9mm<br>
-Grubość: 9,4mm<br>
-Mocowanie paska: 18mm<br>
-Waga: 49g<br>
+Materiał: Stal szlachetna<br>
+Szkło: Mineralne<br>
+Wodoszczelność: 30m<br>
+Szerokość: 39mm<br>
+Grubość: 8mm<br>
+Waga: 106g<br>
 &nbsp;- Bransoleta w zestawie<br>

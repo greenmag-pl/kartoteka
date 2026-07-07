@@ -1,15 +1,23 @@
-<div>OGÓLNE<span>9/16</span></div>
-Model: Saturn I<br>
-Rok produkcji: ~1960<br>
+<div>OGÓLNE<span>9/17</span></div>
+Producent: Roue<br>
+Model: TPS Three - Blue<br>
+Limitacja: 0294/1000<br>
+Rok produkcji: 2020<br>
+Data zakupu: 05.11.2020<br>
 <div>MECHANIZM</div>
-Typ: Manualny<br>
-&nbsp;- Dokręcanie<br>
-&nbsp;- Dzień tygodnia<br>
-Ostatni serwis: 2025/2026<br>
+Typ: Meca-Quartz<br>
+Producent: Seiko<br>
+Kaliber: VK63<br>
+&nbsp;- Stopsekunda<br>
+&nbsp;- Chronograf<br>
+&nbsp;- Ghost date<br>
 <div>KOPERTA</div>
-Materiał: (Cr)<br>
-&nbsp;- Powłoka<br>
-Szkło: Hesalitowe<br>
+Materiał: Stal szlachetna<br>
+Szkło: Mineralne K1<br>
+&nbsp;- Antyrefleks wewnętrzny<br>
 Dekiel: Zakręcany<br>
-Szerokość: 33,5mm<br>
-Mocowanie paska: 17mm<br>
+Wodoszczelność: 50m<br>
+Szerokość: 40mm<br>
+Wysokość L2L: 48mm<br>
+Grubość: 13,5mm<br>
+Mocowanie paska: 20mm<br>

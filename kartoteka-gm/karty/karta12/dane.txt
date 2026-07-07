@@ -1,28 +1,21 @@
-<div>OGÓLNE<span>12/16</span></div>
-Producent: Sinn<br>
-Model: 903 ST BE II<br>
-Referencja: 903.091<br>
-Numer seryjny: 903.19611<br>
-Rok produkcji: 2025<br>
-Data zakupu: 26.03.2025<br>
+<div>OGÓLNE<span>12/17</span></div>
+Producent: Seiko<br>
+Referencja: SGEC91P1<br>
+Numer seryjny: 670157<br>
+Rok produkcji: 2006<br>
+Data zakupu: 28.08.2010<br>
 <div>MECHANIZM</div>
-Typ: Automatyczny<br>
-Producent: La Joux-Perret<br>
-Kaliber: 110<br>
+Typ: Kwarcowy<br>
+Producent: Seiko<br>
+Kaliber: 7N42<br>
 &nbsp;- Stopsekunda<br>
-&nbsp;- Dokręcanie<br>
 &nbsp;- Dzień miesiąca<br>
-&nbsp;- Chronograf<br>
 <div>KOPERTA</div>
 Materiał: Stal szlachetna<br>
-Szkło: Szafirowe<br>
-&nbsp;- Antyrefleks obustronny<br>
-Dekiel: Zakręcany<br>
-&nbsp;- Przeszklony<br>
-Wodoszczelność: 200m<br>
-&nbsp;- Zakręcana koronka<br>
-Szerokość: 41mm<br>
-Grubość: 14,5mm<br>
-Mocowanie paska: 22mm<br>
-Waga: 84g<br>
-&nbsp;- Bransoleta w zestawie<br>
+Szkło: Hardlex<br>
+Dekiel: Wciskany<br>
+Wodoszczelność: 100m<br>
+Szerokość: 38mm<br>
+Wysokość L2L: 44mm<br>
+Grubość: 11,5mm<br>
+Mocowanie paska: 26mm<br>
