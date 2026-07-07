@@ -34,7 +34,6 @@
 
 body
 	{
-	margin-bottom:50px;
 	background-image:linear-gradient(to right, black, #434955, black);
 	cursor:default;
 	user-select:none; 
@@ -68,7 +67,7 @@ body
 	color:gray;
 	border-style:solid none none none;
 	border-color:#434955;
-	border-width:1px;
+	border-width:2px;
 	}
 
 div[id^="karta"]
@@ -114,6 +113,26 @@ div[id^="karta"]:active>span
 	{
 	background-color:#FDAB40;
 	opacity:1;
+	}
+
+#stopka
+	{
+	margin-top:50px;
+	padding:50px;
+	font-family:arial;
+	font-size:25px;
+	color:gray;
+	border-style:solid none none none;
+	border-color:#434955;
+	border-width:2px;
+	opacity:0;
+	animation:widok 2.0s forwards 1.0s;
+	transition:all 0.25s;
+	}
+
+#stopka:active
+	{
+	color:#5DADEC;
 	}
 
 #opis
@@ -191,7 +210,7 @@ div[id^="karta"]:active>span
 	font-family:arial;
 	font-size:40px;
 	color:silver;
-	transition:border-color 0.25s, color 0.25s;
+	transition:all 0.25s;
 	}
 
 #opis>button:active
