@@ -9,6 +9,38 @@ $(function()
 
 	});
 
+	const userCard = new URLSearchParams(location.search).get("karta");
+	if (userCard)
+	{
+		const nazwa = '<div>' + $('#karta' + userCard).text() + '</div>';
+		$.get('karty/karta' + userCard + '/dane.txt')
+			.done(function(data)
+			{
+				if (new URLSearchParams(location.search).get("wstecz") === null)
+				{
+					$('#opis').html(nazwa + data).show().scrollTop(0);
+					$('#opis').css('padding-bottom', '100px');
+					$('#opis span').html('&nbsp;');
+					$(document).off('click', '#opis span').on('click', '#opis span', function()
+					{
+						if (navigator.share) navigator.share({title: $('#opis div:first').text(), url: window.location.href});
+						else navigator.clipboard.writeText(window.location.href);
+					});
+				}
+				else
+				{
+					$('#opis').html(nazwa + data + '<button>Wstecz</button>').show().scrollTop(0);
+					$('#opis>button').fadeIn('normal');
+				};
+				$('body').css('overflow', 'hidden');
+			})
+			.fail(function()
+			{
+				$('#opis').html('Niewłaściwy parametr karty!').show();
+				$('body').css('overflow', 'hidden');
+			});
+	};
+
 	$('div[id^="karta"]')
 	.wrapInner('<span></span>')
 	.css('background-image', function()
@@ -27,32 +59,6 @@ $(function()
 			$('body').css('overflow', 'hidden');
 		});
 	});
-
-	const userCard = new URLSearchParams(location.search).get("karta");
-	if (userCard)
-	{
-		const nazwa = '<div>' + $('#karta' + userCard).find('span').text() + '</div>';
-		$.get('karty/karta' + userCard + '/dane.txt', function(data)
-		{
-			if (new URLSearchParams(location.search).get("wstecz") === null)
-			{
-				$('#opis').html(nazwa + data).show().scrollTop(0);
-				$('#opis').css('padding-bottom', '100px');
-				$('#opis span').html('&nbsp;');
-				$(document).off('click', '#opis span').on('click', '#opis span', function()
-				{
-					if (navigator.share) navigator.share({title: $('#opis div:first').text(), url: window.location.href});
-					else navigator.clipboard.writeText(window.location.href);
-				});
-			}
-			else
-			{
-				$('#opis').html(nazwa + data + '<button>Wstecz</button>').show().scrollTop(0);
-				$('#opis>button').fadeIn('normal');
-			};
-			$('body').css('overflow', 'hidden');	
-		});
-	};
 
 	$('#stopka')
 	.prepend('© 2025-' + new Date().getFullYear() + ' ')
