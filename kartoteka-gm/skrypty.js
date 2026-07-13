@@ -13,7 +13,7 @@ $(function()
 	if (userCard)
 	{
 		const nazwa = '<div>' + $('#karta' + userCard).text() + '</div>';
-		$.get('karty/karta' + userCard + '/dane.txt')
+		$.get('karty/' + userCard + '/dane.txt')
 			.done(function(data)
 			{
 				if (new URLSearchParams(location.search).get("wstecz") === null)
@@ -32,13 +32,12 @@ $(function()
 					$('#opis').html(nazwa + data + '<button>Wstecz</button>').show().scrollTop(0);
 					$('#opis>button').fadeIn('normal');
 				};
-				$('body').css('overflow', 'hidden');
 			})
 			.fail(function()
 			{
-				$('#opis').html('Niewłaściwy parametr karty!').show();
-				$('body').css('overflow', 'hidden');
+				$('#opis').html('<p>Niewłaściwy parametr karty!</p>').show();
 			});
+		$('body').css('overflow', 'hidden');
 	};
 
 	$('div[id^="karta"]')
@@ -81,7 +80,7 @@ $(function()
 		let result = url.origin + url.pathname;
 		if (value) result += '?klucz=' + value + '&';
 		else result += '?';
-		result += 'karta=' + $(this).attr('name') + '&wstecz';
+		result += 'karta=' + this.id + '&wstecz';
 		if (navigator.share) navigator.share({title: $('#opis div:first').text(), url: result});
 		else navigator.clipboard.writeText(result);
 	});
