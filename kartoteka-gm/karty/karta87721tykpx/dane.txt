@@ -1,0 +1,26 @@
+<div>OGÓLNE<span name="87721tykpx">8/17</span></div>
+Producent: Proteus<br>
+Model: Bronze White<br>
+Referencja: PY046D<br>
+Limitacja: 086/100<br>
+Rok produkcji: 2023<br>
+Data zakupu: 18.09.2023<br>
+<div>MECHANIZM</div>
+Typ: Automatyczny<br>
+Producent: Seiko<br>
+Kaliber: NH35<br>
+&nbsp;- Stopsekunda<br>
+&nbsp;- Dokręcanie<br>
+&nbsp;- Dzień miesiąca<br>
+<div>KOPERTA</div>
+Materiał: Brąz<br>
+Szkło: Szafirowe<br>
+&nbsp;- Antyrefleks wewnętrzny<br>
+Dekiel: Zakręcany<br>
+Wodoszczelność: 300m<br>
+&nbsp;- Zakręcana koronka<br>
+Szerokość: 42mm<br>
+Wysokość L2L: 49mm<br>
+Grubość: 14mm<br>
+Mocowanie paska: 22mm<br>
+Waga: 122g<br>

@@ -1,0 +1,44 @@
+<div>OGÓLNE<span name="18075vdcsg">1/17</span></div>
+Producent: 1234567890<br>
+Model: 1234567890<br>
+Referencja: 1234567890<br>
+Numer seryjny: 1234567890<br>
+Limitacja: 1234567890/1234567890<br>
+Rok produkcji: 1234567890<br>
+Data zakupu: 1234567890<br>
+&nbsp;- Zakupiony jako używany<br>
+&nbsp;- Zegarek poza kolekcją<br>
+<div>MECHANIZM</div>
+Typ: 1234567890<br>
+Producent: 1234567890<br>
+Kaliber: 1234567890<br>
+&nbsp;- Stopsekunda<br>
+&nbsp;- Dokręcanie<br>
+&nbsp;- Wskaźnik rezerwy<br>
+&nbsp;- Tourbillon<br>
+&nbsp;- Dzień miesiąca<br>
+&nbsp;- Dzień tygodnia<br>
+&nbsp;- Wieczny kalendarz<br>
+&nbsp;- Fazy księżyca<br>
+&nbsp;- GMT<br>
+&nbsp;- Budzik<br>
+&nbsp;- Repetier<br>
+&nbsp;- Chronograf<br>
+&nbsp;- 1234567890<br>
+&nbsp;- Chronometr<br>
+Ostatni serwis: 1234567890<br>
+<div>KOPERTA</div>
+Materiał: 1234567890<br>
+&nbsp;- Powłoka<br>
+Szkło: 1234567890<br>
+&nbsp;- Antyrefleks wewnętrzny<br>
+Dekiel: 1234567890<br>
+&nbsp;- Przeszklony<br>
+Wodoszczelność: 1234567890m<br>
+&nbsp;- Zakręcana koronka<br>
+Szerokość: 1234567890mm<br>
+Wysokość L2L: 1234567890mm<br>
+Grubość: 1234567890mm<br>
+Mocowanie paska: 1234567890mm<br>
+Waga: 1234567890g<br>
+&nbsp;- Bransoleta w zestawie<br>
