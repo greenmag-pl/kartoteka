@@ -228,10 +228,15 @@ img
 
 p
 	{background-color:green;
-	position:relative;
+	position:fixed;
 	top:0px;
 	left:0px;
 	padding-top:150px;
+
+	background-image:url('stop.png');
+	background-repeat:no-repeat;
+	background-position: center top;
+
 	text-align:center;
 	font-family:inconsolata;
 	font-size:30px;
