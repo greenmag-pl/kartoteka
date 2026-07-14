@@ -228,9 +228,8 @@ img
 
 p
 	{background-color:green;
-	position:fixed;
-	top:0px;
-	left:0px;
+
+	width:100%;
 	padding-top:150px;
 
 	background-image:url('stop.png');
