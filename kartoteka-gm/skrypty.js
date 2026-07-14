@@ -26,7 +26,7 @@ $(function()
 			})
 			.fail(function()
 			{
-				$('#opis').html('<p style="margin-top:100px;">Brak dostępu.<br>Niewłaściwy parametr karty!</p>').show();
+				$('#opis').html('<p style="margin-top:100px;">Niewłaściwy parametr karty.</p>').show();
 			});
 		$('body').css('overflow', 'hidden');
 	}
@@ -36,7 +36,7 @@ $(function()
 		if (userPass === null) userPass = "";
 		$.get("physicalpass", function(realPass)
 		{
-			if (userPass !== realPass) $('body').html('<p>Brak dostępu.<br>Niewłaściwy klucz dostępu!</p>');
+			if (userPass !== realPass) $('body').html('<p>Niewłaściwy klucz dostępu.</p>');
 		});
 	};
 
