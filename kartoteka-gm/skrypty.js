@@ -36,7 +36,7 @@ $(function()
 		if (userPass === null) userPass = "";
 		$.get("physicalpass", function(realPass)
 		{
-			if (userPass !== realPass) $('body').html('<img src="stop.png"><p>Brak dostępu.</p>');
+			if (userPass !== realPass) $('body').html('<p>Brak dostępu.</p>');
 		});
 	};
 
