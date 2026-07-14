@@ -1,0 +1,19 @@
+INSTRUKCJA
+--------------------------------------------------------------------------
+
+Wywołanie bez klucza dostępu:
+https://domena.pl/kartoteka-html
+
+Wywołanie z kluczem dostępu:
+https://domena.pl/kartoteka-html/?klucz=kluczdostepu
+
+Automatyczne wyświetlenie karty (bez możliwości powrotu do kartoteki):
+https://domena.pl/kartoteka-html/?karta=0123456789
+
+Automatyczne wyświetlenie karty (z możliwością powrotu do kartoteki):
+https://domena.pl/kartoteka-html/?karta=0123456789&wstecz
+
+--------------------------------------------------------------------------
+
+UWAGA:
+Wygenerowana strona będzie działać poprawnie wyłącznie wczytana z serwera.
