@@ -1,24 +1,15 @@
 $(function()
 {
 
-	let userPass = new URLSearchParams(location.search).get("klucz");
-	if (userPass === null) userPass = "";
-	$.get("main-dat", function(realPass)
-	{
-		if (userPass !== realPass) $('body').html('<img src="stop.png"><p>Brak dostępu.</p>');
-
-	});
-
 	const userCard = new URLSearchParams(location.search).get("karta");
 	if (userCard)
 	{
-		const nazwa = '<div>' + $('#karta' + userCard).text() + '</div>';
 		$.get('karty/karta' + userCard + '/dane.txt')
 			.done(function(data)
 			{
 				if (new URLSearchParams(location.search).get("wstecz") === null)
 				{
-					$('#opis').html(nazwa + data).show().scrollTop(0);
+					$('#opis').html('<div>' + $('#karta' + userCard).text() + '</div>' + data).show().scrollTop(0);
 					$('#opis').css('padding-bottom', '100px');
 					$('#opis span').html('&nbsp;');
 					$(document).off('click', '#opis span').on('click', '#opis span', function()
@@ -29,16 +20,60 @@ $(function()
 				}
 				else
 				{
-					$('#opis').html(nazwa + data + '<button>Wstecz</button>').show().scrollTop(0);
+					$('#opis').html('<div>' + $('#karta' + userCard).text() + '</div>' + data + '<button>Wstecz</button>').show().scrollTop(0);
 					$('#opis>button').fadeIn('normal');
 				};
 			})
 			.fail(function()
 			{
-				$('#opis').html('<p>Niewłaściwy parametr karty!</p>').show();
+				$('#opis').html('<img src="stop.png"><p>Niewłaściwy parametr karty!</p>').show();
 			});
 		$('body').css('overflow', 'hidden');
 	};
+	else
+	{
+		let userPass = new URLSearchParams(location.search).get("klucz");
+		if (userPass === null) userPass = "";
+		$.get("main-dat", function(realPass)
+		{
+			if (userPass !== realPass) $('body').html('<img src="stop.png"><p>Brak dostępu.</p>');
+		});
+
+	};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	$('div[id^="karta"]')
 	.wrapInner('<span></span>')
