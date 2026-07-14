@@ -44,7 +44,7 @@ $(function()
 	.wrapInner('<span></span>')
 	.css('background-image', function()
 	{
-		return 'url("karty/karta' + this.id + '/obraz.jpg")';
+		return 'url("karty/' + this.id + '/obraz.jpg")';
 	})
 	.click(function()
 	{
