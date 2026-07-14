@@ -228,7 +228,11 @@ img
 
 p
 	{background-color:green;
+	position:absolute;
+	top:0px;
+	left:0px;
 	padding-top:150px;
+	text-align:center;
 	font-family:inconsolata;
 	font-size:30px;
 	color:silver;
