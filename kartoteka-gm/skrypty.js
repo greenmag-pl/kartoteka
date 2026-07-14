@@ -13,7 +13,7 @@ $(function()
 	if (userCard)
 	{
 		const nazwa = '<div>' + $('#karta' + userCard).text() + '</div>';
-		$.get('karty/' + userCard + '/dane.txt')
+		$.get('karty/karta' + userCard + '/dane.txt')
 			.done(function(data)
 			{
 				if (new URLSearchParams(location.search).get("wstecz") === null)
@@ -44,7 +44,7 @@ $(function()
 	.wrapInner('<span></span>')
 	.css('background-image', function()
 	{
-		return 'url("karty/' + this.id + '/obraz.jpg")';
+		return 'url("karty/karta' + this.id + '/obraz.jpg")';
 	})
 	.click(function()
 	{
