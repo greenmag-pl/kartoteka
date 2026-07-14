@@ -26,14 +26,14 @@ $(function()
 			})
 			.fail(function()
 			{
-				$('#opis').html('<p>Niewłaściwy parametr karty!</p>').show();
+				$('#opis').html(<p>Niewłaściwy parametr karty!</p>').show();
 			});
 		$('body').css('overflow', 'hidden');
 	}
 	else
 	{
 		let userPass = new URLSearchParams(location.search).get("klucz");
-		
+		if (userPass === null) userPass = "";
 		$.get("physicalpass", function(realPass)
 		{
 			if (userPass !== realPass) $('body').html('<img src="stop.png"><p>Brak dostępu.</p>');

@@ -1,0 +1,23 @@
+<div>OGÓLNE<span id="15706utlci">15/17</span></div>
+Producent: Steinhart<br>
+Model: Nav. B-Uhr<br>
+Rok produkcji: 2016/2017<br>
+Data zakupu: 25.08.2017<br>
+<div>MECHANIZM</div>
+Typ: Manualny<br>
+Producent: ETA<br>
+Kaliber: Unitas 6497-1<br>
+&nbsp;- Dokręcanie<br>
+Ostatni serwis: 28.05.2026<br>
+<div>KOPERTA</div>
+Materiał: Brąz<br>
+Szkło: Szafirowe<br>
+&nbsp;- Antyrefleks wewnętrzny<br>
+Dekiel: Zakręcany<br>
+&nbsp;- Przeszklony<br>
+Wodoszczelność: 30m<br>
+Szerokość: 44mm<br>
+Wysokość L2L: 52mm<br>
+Grubość: 14,5mm<br>
+Mocowanie paska: 22mm<br>
+Waga: 107g<br>
