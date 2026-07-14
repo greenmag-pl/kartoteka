@@ -26,7 +26,7 @@ $(function()
 			})
 			.fail(function()
 			{
-				$('#opis').html(<p>Niewłaściwy parametr karty!</p>').show();
+				$('#opis').html('<p>Niewłaściwy parametr karty!</p>').show();
 			});
 		$('body').css('overflow', 'hidden');
 	}
