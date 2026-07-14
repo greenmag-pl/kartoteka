@@ -29,7 +29,7 @@ $(function()
 				$('#opis').html('<img src="stop.png"><p>Niewłaściwy parametr karty!</p>').show();
 			});
 		$('body').css('overflow', 'hidden');
-	};
+	}
 	else
 	{
 		let userPass = new URLSearchParams(location.search).get("klucz");
@@ -76,11 +76,7 @@ $(function()
 	$(document).on('click', '#opis span', function()
 	{
 		const url = new URL(window.location.href);
-		const value = url.searchParams.get('klucz');
-		let result = url.origin + url.pathname;
-		if (value) result += '?klucz=' + value + '&';
-		else result += '?';
-		result += 'karta=' + this.id + '&wstecz';
+		let result = url.origin + url.pathname + '?karta=' + this.id + '&wstecz';
 		if (navigator.share) navigator.share({title: $('#opis div:first').text(), url: result});
 		else navigator.clipboard.writeText(result);
 	});
