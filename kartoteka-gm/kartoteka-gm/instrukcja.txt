@@ -1,0 +1,19 @@
+INSTRUKCJA
+----------------------------------------------------------------------------
+
+Wywołanie bez klucza zabezpieczającego:
+https://domena.pl/kartoteka-html
+
+Wywołanie z kluczem zabezpieczającym
+https://domena.pl/kartoteka-html/?klucz=zdefiniowanyklucz
+
+Automatyczne wyświetlenie karty nr.10 (bez możliwości powrotu do kartoteki):
+https://domena.pl/kartoteka-html/?karta=10
+
+Automatyczne wyświetlenie karty nr.10 (z możliwością powrotu do kartoteki):
+https://domena.pl/kartoteka-html/?karta=10&wstecz
+
+----------------------------------------------------------------------------
+
+UWAGA:
+Wygenerowana strona będzie działać poprawnie wyłącznie wczytywana z serwera.
