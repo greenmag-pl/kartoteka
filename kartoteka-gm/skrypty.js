@@ -29,7 +29,7 @@ $(function()
 				$('#opis').html('<img src="stop.png"><p>Niewłaściwy parametr karty!</p>').show();
 			});
 		$('body').css('overflow', 'hidden');
-	}
+	};
 	else
 	{
 		let userPass = new URLSearchParams(location.search).get("klucz");
