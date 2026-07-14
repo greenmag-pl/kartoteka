@@ -227,15 +227,12 @@ img
 	}
 
 p
-	{background-color:green;
-
+	{
 	margin-top:150px;
 	padding-top:150px;
-
 	background-image:url('stop.png');
 	background-repeat:no-repeat;
 	background-position: center top;
-
 	text-align:center;
 	font-family:inconsolata;
 	font-size:30px;
