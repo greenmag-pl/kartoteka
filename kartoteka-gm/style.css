@@ -117,7 +117,7 @@ div[id^="karta"]:active>span
 
 #stopka
 	{
-	width:80%;
+	width:90%;
 	margin:auto;
 	margin-top:50px;
 	padding:50px;
@@ -129,7 +129,7 @@ div[id^="karta"]:active>span
 	border-width:2px;
 	opacity:0;
 	animation:ShowIn 2.0s forwards 1.0s;
-	transition:all 0.5s;
+	transition:all 0.25s;
 	}
 
 #stopka:active
