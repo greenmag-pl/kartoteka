@@ -9,8 +9,7 @@ $(function()
 			{
 				if (new URLSearchParams(location.search).get("wstecz") === null)
 				{
-					$('#opis').html('<div>' + $('#karta' + userCard).text() + '</div>' + data).show().scrollTop(0);
-					$('#opis').css('padding-bottom', '100px');
+					$('#opis').css('padding-bottom', '100px').html('<div>' + $('#karta' + userCard).text() + '</div>' + data).show().scrollTop(0);
 					$('#opis span').html('&nbsp;');
 					$(document).off('click', '#opis span').on('click', '#opis span', function()
 					{
@@ -26,7 +25,7 @@ $(function()
 			})
 			.fail(function()
 			{
-				$('#opis').html('<p style="margin-top:200px;">Niewłaściwy parametr karty.</p>').show();
+				$('#opis').css('padding', '0px').html('<p>Niewłaściwy parametr karty.</p>').show();
 			});
 		$('body').css('overflow', 'hidden');
 	}
@@ -40,9 +39,7 @@ $(function()
 		});
 	};
 
-	$('div[id^="karta"]')
-	.wrapInner('<span></span>')
-	.css('background-image', function()
+	$('div[id^="karta"]').wrapInner('<span></span>').css('background-image', function()
 	{
 		return 'url("karty/' + this.id + '/obraz.jpg")';
 	})
@@ -59,9 +56,7 @@ $(function()
 		});
 	});
 
-	$('#stopka')
-	.prepend('© 2025-' + new Date().getFullYear() + ' ')
-	.click(function()
+	$('#stopka').prepend('© 2025-' + new Date().getFullYear() + ' ').click(function()
 	{
 		window.location.href = 'https://greenmag-pl.github.io/kartoteka';
 	});

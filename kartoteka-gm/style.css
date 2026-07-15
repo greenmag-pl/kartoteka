@@ -223,7 +223,7 @@ div[id^="karta"]:active>span
 	}
 
 p
-	{
+	{background:green;
 	margin-top:250px;
 	padding-top:150px;
 	background-image:url('stop.png');
