@@ -1,0 +1,15 @@
+<div>OGÓLNE<span id="0097259290">9/16</span></div>
+Model: Saturn I<br>
+Rok produkcji: ~1960<br>
+<div>MECHANIZM</div>
+Typ: Manualny<br>
+&nbsp;- Dokręcanie<br>
+&nbsp;- Dzień tygodnia<br>
+Ostatni serwis: 2025/2026<br>
+<div>KOPERTA</div>
+Materiał: (Cr)<br>
+&nbsp;- Powłoka<br>
+Szkło: Hesalitowe<br>
+Dekiel: Zakręcany<br>
+Szerokość: 33,5mm<br>
+Mocowanie paska: 17mm<br>

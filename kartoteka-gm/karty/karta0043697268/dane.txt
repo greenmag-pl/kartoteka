@@ -1,0 +1,24 @@
+<div>OGÓLNE<span id="0043697268">4/16</span></div>
+Producent: Crudo Carattere<br>
+Model: Cali<br>
+Referencja: V:02<br>
+Rok produkcji: 2025<br>
+Data zakupu: 27.11.2025<br>
+<div>MECHANIZM</div>
+Typ: Automatyczny<br>
+Producent: Seiko<br>
+Kaliber: NH35A<br>
+&nbsp;- Stopsekunda<br>
+&nbsp;- Dokręcanie<br>
+&nbsp;- Ghost date<br>
+<div>KOPERTA</div>
+Materiał: Stal szlachetna<br>
+Szkło: Szafirowe<br>
+&nbsp;- Antyrefleks wewnętrzny<br>
+Dekiel: Zakręcany<br>
+Wodoszczelność: 200m<br>
+&nbsp;- Zakręcana koronka<br>
+Szerokość: 42mm<br>
+Wysokość L2L: 49mm<br>
+Grubość: 13mm<br>
+Mocowanie paska: 22mm<br>
