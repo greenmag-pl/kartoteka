@@ -199,12 +199,9 @@ div[id^="karta"]:active>span
 
 #opis img
 	{
-	transform:scale(1.5);
-	transform-origin:top left;
 	margin-top:50px;
-	margin-bottom:150px;
-	width:298px;
-	height:298px;
+	width:150%;
+	height:150%;
 	border-style:solid;
 	border-color:gray;
 	border-width:1px;
