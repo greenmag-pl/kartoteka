@@ -1,4 +1,4 @@
-<div>OGÓLNE<span id="008082010083">8/16</span></div>
+<div>OGÓLNE<span>8/16</span></div>
 Producent: Roue<br>
 Model: TPS Three - Blue<br>
 Limitacja: 0294/1000<br>

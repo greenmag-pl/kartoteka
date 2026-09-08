@@ -1,4 +1,4 @@
-<div>OGÓLNE<span id="002067015101">2/16</span></div>
+<div>OGÓLNE<span>2/16</span></div>
 Producent: Casio<br>
 Model: Vintage<br>
 Referencja: B640WD-1AVEF<br>

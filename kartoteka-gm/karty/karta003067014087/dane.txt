@@ -1,4 +1,4 @@
-<div>OGÓLNE<span id="003067014087">3/16</span></div>
+<div>OGÓLNE<span>3/16</span></div>
 Producent: Cortebert<br>
 Model: 25PW<br>
 Rok produkcji: 1930-1940<br>

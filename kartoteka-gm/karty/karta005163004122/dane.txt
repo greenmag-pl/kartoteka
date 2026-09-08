@@ -1,4 +1,4 @@
-<div>OGÓLNE<span id="005163004122">5/16</span></div>
+<div>OGÓLNE<span>5/16</span></div>
 Producent: Mińska Fabryka Zegarków<br>
 <div>MECHANIZM</div>
 Typ: Manualny<br>

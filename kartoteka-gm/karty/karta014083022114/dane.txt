@@ -1,4 +1,4 @@
-<div>OGÓLNE<span id="014083022114">14/16</span></div>
+<div>OGÓLNE<span>14/16</span></div>
 Producent: Steinhart<br>
 Model: Nav. B-Uhr<br>
 Rok produkcji: 2016/2017<br>

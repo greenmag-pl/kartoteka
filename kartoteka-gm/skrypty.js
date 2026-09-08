@@ -1,3 +1,14 @@
+function getImg()
+{
+
+	$('#opis img').css(
+	{
+		'background-image': $('#karta' + $('#opis span').attr('id')).css('background-image'),
+		'background-position': $('#karta' + $('#opis span').attr('id')).css('background-position')
+	});
+
+}
+
 $(function()
 {
 
@@ -9,8 +20,10 @@ $(function()
 			{
 				if (new URLSearchParams(location.search).get("wstecz") === null)
 				{
-					$('#opis').css('padding-bottom', '100px').html('<div>' + $('#karta' + userCard).text() + '</div>' + data).show().scrollTop(0);
+					$('#opis').html('<div>' + $('#karta' + userCard).text() + '</div>' + data + '<img>').show().scrollTop(0);
 					$('#opis span').html('&nbsp;');
+					$('#opis span').attr('id', userCard);
+					getImg();
 					$(document).off('click', '#opis span').on('click', '#opis span', function()
 					{
 						if (navigator.share) navigator.share({title: $('#opis div:first').text(), url: window.location.href});
@@ -19,7 +32,9 @@ $(function()
 				}
 				else
 				{
-					$('#opis').html('<div>' + $('#karta' + userCard).text() + '</div>' + data + '<button>Wstecz</button>').show().scrollTop(0);
+					$('#opis').html('<div>' + $('#karta' + userCard).text() + '</div>' + data + '<img><button>Wstecz</button>').show().scrollTop(0);
+					$('#opis span').attr('id', userCard);
+					getImg();
 					$('#opis>button').fadeIn('normal');
 				};
 			})
@@ -45,11 +60,13 @@ $(function()
 	})
 	.click(function()
 	{
-		const nazwa = $(this).find('span').text();
+		const _id = $(this);
 		$.get('karty/' + this.id + '/dane.txt', function(data)
 		{
-			$('#opis').html('<div>' + nazwa + '</div>' + data + '<button>Wstecz</button>').slideDown('fast', function ()
+			$('#opis').html('<div>' + _id.find('span').text() + '</div>' + data + '<img><button>Wstecz</button>').slideDown('fast', function ()
 			{
+				$('#opis span').attr('id', _id.attr('id').replace('karta', ''));
+				getImg();
 				$('#opis>button').fadeIn('normal');
 			}).scrollTop(0);
 			$('body').css('overflow', 'hidden');

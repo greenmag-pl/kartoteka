@@ -1,4 +1,4 @@
-<div>OGÓLNE<span id="016086038097">16/16</span></div>
+<div>OGÓLNE<span>16/16</span></div>
 Producent: Vratislavia Conceptum<br>
 Model: Chronohistoria<br>
 Rok produkcji: 2021<br>

@@ -1,4 +1,4 @@
-<div>OGÓLNE<span id="004067010105">4/16</span></div>
+<div>OGÓLNE<span>4/16</span></div>
 Producent: Crudo Carattere<br>
 Model: Cali<br>
 Referencja: V:02<br>

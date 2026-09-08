@@ -1,4 +1,4 @@
-<div>OGÓLNE<span id="015086016097">15/16</span></div>
+<div>OGÓLNE<span>15/16</span></div>
 Producent: Vostok<br>
 Model: Amfibia Classic (Beczka)<br>
 Referencja: 090914M<br>

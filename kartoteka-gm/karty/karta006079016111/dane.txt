@@ -1,4 +1,4 @@
-<div>OGÓLNE<span id="006079016111">6/16</span></div>
+<div>OGÓLNE<span>6/16</span></div>
 Producent: Orient<br>
 Model: Bambino v.3 gen.2<br>
 Referencja: FAC0000EW0<br>
