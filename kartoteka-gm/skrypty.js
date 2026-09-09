@@ -11,7 +11,7 @@ function getImg()
 $(function()
 {
 
-	const userCard = new URLSearchParams(location.search).get("karta");
+	const userCard = new URLSearchParams(location.search).get('karta');
 	if (userCard)
 	{
 		$.get('karty/karta' + userCard + '/dane.txt')
