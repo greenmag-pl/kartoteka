@@ -61,7 +61,7 @@ body
 	display:block;
 	margin-top:10px;
 	padding-top:10px;
-	letter-spacing:0px;
+	letter-spacing:normal;
 	font-family:arial;
 	font-size:30px;
 	color:gray;
@@ -171,7 +171,7 @@ div[id^="karta"]:active>span
 	border-style:none none solid none;
 	border-color:gray;
 	border-width:1px;
-	letter-spacing:1px;
+	letter-spacing:2px;
 	font-family:arial;
 	font-size:40px;
 	color:#FDAB40;
@@ -183,7 +183,7 @@ div[id^="karta"]:active>span
 	padding-right:50px;
 	background-image:url('share.png');
 	background-repeat:no-repeat;
-	background-position: right center;
+	background-position:right center;
 	letter-spacing:normal;
 	font-family:inconsolata;
 	color:gray;
@@ -240,7 +240,7 @@ p
 	padding-top:150px;
 	background-image:url('stop.png');
 	background-repeat:no-repeat;
-	background-position: center top;
+	background-position:center top;
 	text-align:center;
 	letter-spacing:normal;
 	font-family:inconsolata;

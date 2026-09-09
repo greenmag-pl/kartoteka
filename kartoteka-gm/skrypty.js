@@ -3,8 +3,7 @@ function getImg()
 
 	$('#opis img').css(
 	{
-		'background-image': $('#karta' + $('#opis span').attr('id')).css('background-image'),
-		'background-position': $('#karta' + $('#opis span').attr('id')).css('background-position')
+		'background-image': $('#karta' + $('#opis span').attr('id')).css('background-image')
 	});
 
 }
@@ -18,7 +17,7 @@ $(function()
 		$.get('karty/karta' + userCard + '/dane.txt')
 			.done(function(data)
 			{
-				if (new URLSearchParams(location.search).get("wstecz") === null)
+				if (new URLSearchParams(location.search).get('wstecz') === null)
 				{
 					$('#opis').html('<div>' + $('#karta' + userCard).text() + '</div>' + data + '<img>').show().scrollTop(0);
 					$('#opis span').html('&nbsp;');
@@ -46,9 +45,9 @@ $(function()
 	}
 	else
 	{
-		let userPass = new URLSearchParams(location.search).get("klucz");
-		if (userPass === null) userPass = "";
-		$.get("physicalpass", function(realPass)
+		let userPass = new URLSearchParams(location.search).get('klucz');
+		if (userPass === null) userPass = '';
+		$.get('physicalpass', function(realPass)
 		{
 			if (userPass !== realPass) $('body').html('<p>Niewłaściwy klucz dostępu.</p>');
 		});
