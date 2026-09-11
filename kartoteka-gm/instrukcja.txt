@@ -8,10 +8,10 @@ Wywołanie z kluczem dostępu:
 https://domena.pl/kartoteka-html/?klucz=kluczdostepu
 
 Automatyczne wyświetlenie karty (bez możliwości powrotu do kartoteki):
-https://domena.pl/kartoteka-html/?karta=000123456789
+https://domena.pl/kartoteka-html/?karta=0000123456789
 
 Automatyczne wyświetlenie karty (z możliwością powrotu do kartoteki):
-https://domena.pl/kartoteka-html/?karta=000123456789&wstecz
+https://domena.pl/kartoteka-html/?karta=0000123456789&wstecz
 
 --------------------------------------------------------------------------
 

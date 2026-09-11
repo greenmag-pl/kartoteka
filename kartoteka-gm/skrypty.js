@@ -1,23 +1,19 @@
 function getImg()
 {
-
 	$('#opis img').css(
 	{
 		'background-image': $('#karta' + $('#opis span').attr('id')).css('background-image')
 	});
-
 }
 
 function De(s)
 {
-
 	let wynik = '';
 	for (let i = 0; i < s.length; i++)
 		{
 			wynik += s.charCodeAt(i).toString();
 		}
 	return wynik;
-
 }
 
 $(function()
@@ -58,8 +54,7 @@ $(function()
 	else
 	{
 		let userPass = new URLSearchParams(location.search).get('klucz');
-		if (userPass === null) userPass = '';
-		userPass = De(userPass);
+		if (userPass === null) { userPass = ''; } else { userPass = De(userPass); }
 		$.get('physicalpass', function(realPass)
 		{
 			if (userPass !== realPass) $('body').html('<p>Niewłaściwy klucz dostępu.</p>');
