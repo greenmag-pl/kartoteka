@@ -1,0 +1,3 @@
+<div>OGÓLNE<span>15/17</span></div>
+<div>MECHANIZM</div>
+<div>KOPERTA</div>
