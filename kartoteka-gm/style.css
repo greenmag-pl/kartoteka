@@ -159,6 +159,7 @@ div[id^="karta"]:active>span
 
 #opis>div:first-child
 	{
+	letter-spacing:normal;
 	font-family:goldman;
 	font-size:60px;
 	color:#5DADEC;
