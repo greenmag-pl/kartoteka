@@ -8,6 +8,18 @@ function getImg()
 
 }
 
+function De(s)
+{
+
+	let wynik = '';
+	for (let i = 0; i < s.length; i++)
+		{
+			wynik += s.charCodeAt(i).toString();
+		}
+	return wynik;
+
+}
+
 $(function()
 {
 
@@ -47,6 +59,7 @@ $(function()
 	{
 		let userPass = new URLSearchParams(location.search).get('klucz');
 		if (userPass === null) userPass = '';
+		userPass = De(userPass);
 		$.get('physicalpass', function(realPass)
 		{
 			if (userPass !== realPass) $('body').html('<p>Niewłaściwy klucz dostępu.</p>');
