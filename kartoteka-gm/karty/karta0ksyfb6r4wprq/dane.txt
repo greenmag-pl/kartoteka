@@ -14,3 +14,5 @@ Szkło: Hesalitowe<br>
 Dekiel: Zakręcany<br>
 Szerokość: 33,5mm<br>
 Mocowanie paska: 17mm<br>
+<div>NOTATKI</div>
+<a>Otwórz plik</a><br>

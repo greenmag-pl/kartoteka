@@ -21,3 +21,5 @@ Wysokość L2L: 52mm<br>
 Grubość: 14,5mm<br>
 Mocowanie paska: 22mm<br>
 Waga: 107g<br>
+<div>NOTATKI</div>
+<a>Otwórz plik</a><br>
