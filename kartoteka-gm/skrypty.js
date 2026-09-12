@@ -92,7 +92,7 @@ $(function()
 	$('#opis').on('click', '>button', function()
 	{
 		$(this).hide();
-        	$('#opis').slideUp('fast');
+		$('#opis').slideUp('fast');
 		$('body').css('overflow', 'auto');
 	});
 

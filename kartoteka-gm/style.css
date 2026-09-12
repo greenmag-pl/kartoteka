@@ -198,6 +198,20 @@ div[id^="karta"]:active>span
 	opacity:1;
 	}
 
+#opis>a
+	{
+	margin-top:50px;
+	
+	}
+
+#opis>a:active
+	{
+	border-style:solid;
+	border-color:gray;
+	border-width:1px;
+	border-radius:10px;
+	}
+
 #opis img
 	{
 	margin-top:50px;
