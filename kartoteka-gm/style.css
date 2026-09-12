@@ -200,13 +200,12 @@ div[id^="karta"]:active>span
 
 #opis>a
 	{
-	margin-top:50px;
-	
+	transition:all 0.25s;	
 	}
 
 #opis>a:active
 	{
-
+	color:#5DADEC;
 	}
 
 #opis>img

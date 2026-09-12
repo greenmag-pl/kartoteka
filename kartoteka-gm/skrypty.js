@@ -1,5 +1,6 @@
 function getImg()
 {
+	$('#opis>a').prepend('&#128462; ');
 	$('#opis img').css(
 	{
 		'background-image': $('#karta' + $('#opis span').attr('id')).css('background-image')
