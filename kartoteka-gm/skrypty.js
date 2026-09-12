@@ -8,12 +8,11 @@ function getImg()
 
 function De(s)
 {
-	let wynik = '';
-	for (let i = 0; i < s.length; i++)
-		{
-			wynik += s.charCodeAt(i).toString();
-		}
-	return wynik;
+	let w1 = '';
+	for (let i = 0; i < s.length; i++) w1 += s.charCodeAt(i).toString();
+	let w2 = '';
+	for (let i = w1.length - 1; i >= 0; i--) w2 += w1[i];
+	return w2;
 }
 
 $(function()
