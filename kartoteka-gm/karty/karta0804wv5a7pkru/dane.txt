@@ -21,3 +21,4 @@ Szerokość: 40mm<br>
 Wysokość L2L: 48mm<br>
 Grubość: 13,5mm<br>
 Mocowanie paska: 20mm<br>
+<a>Notatki</a><br>

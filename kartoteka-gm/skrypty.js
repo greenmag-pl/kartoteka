@@ -69,7 +69,7 @@ $(function()
 		const _id = $(this);
 		$.get('karty/' + this.id + '/dane.txt', function(data)
 		{
-			$('#opis').html('<div>' + _id.find('span').text() + '</div>' + data + '<img><button>Wstecz</button>').slideDown('fast', function ()
+			$('#opis').html('<div>' + _id.find('span').text() + '</div>' + data + '<img><button>Wstecz</button>').slideDown('fast', function()
 			{
 				$('#opis span').attr('id', _id.attr('id').replace('karta', ''));
 				getImg();
@@ -84,14 +84,19 @@ $(function()
 		window.location.href = 'https://greenmag-pl.github.io/kartoteka';
 	});
 
-	$(document).on('click', '#opis>button', function()
+	$('#opis').on('click', '>a', function()
+	{
+		window.open('karty/karta' + $('#opis span').attr('id') + '/notatki.txt', '_blank');
+	});
+
+	$('#opis').on('click', '>button', function()
 	{
 		$(this).hide();
         	$('#opis').slideUp('fast');
 		$('body').css('overflow', 'auto');
 	});
 
-	$(document).on('click', '#opis span', function()
+	$('#opis').on('click', 'span', function()
 	{
 		const url = new URL(window.location.href);
 		let result = url.origin + url.pathname + '?karta=' + this.id + '&wstecz';
