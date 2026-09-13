@@ -1,9 +1,6 @@
 function getImg()
 {
-	$('#opis img').css(
-	{
-		'background-image': $('#karta' + $('#opis span').attr('id')).css('background-image')
-	});
+	$('#opis>img').attr('src', 'karty/karta' + $('#opis span').attr('id') + '/obraz.jpg');
 }
 
 function De(s)
@@ -69,7 +66,7 @@ $(function()
 		const _id = $(this);
 		$.get('karty/' + this.id + '/dane.txt', function(data)
 		{
-			$('#opis').html('<div>' + _id.children('span').text() + '</div>' + data + '<img><button>Wstecz</button>').slideDown('fast', function()
+			$('#opis').html('<div>' + _id.text() + '</div>' + data + '<img><button>Wstecz</button>').slideDown('fast', function()
 			{
 				$('#opis span').attr('id', _id.attr('id').replace('karta', ''));
 				getImg();
