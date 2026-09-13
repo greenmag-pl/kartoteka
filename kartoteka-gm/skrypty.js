@@ -67,10 +67,9 @@ $(function()
 		$.get('karty/' + this.id + '/dane.txt', function(data)
 		{
 			$('#opis').html('<div>' + _id.text() + '</div>' + data + '<img><button>Wstecz</button>').slideDown('fast').scrollTop(0);
-				$('#opis span').attr('id', _id.attr('id').replace('karta', ''));
-				getImg();
-				$('#opis>button').fadeIn('normal');
-
+			$('#opis span').attr('id', _id.attr('id').replace('karta', ''));
+			getImg();
+			$('#opis>button').fadeIn('normal');
 			$('body').css('overflow', 'hidden');
 		});
 	});
