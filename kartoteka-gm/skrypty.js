@@ -66,12 +66,11 @@ $(function()
 		const _id = $(this);
 		$.get('karty/' + this.id + '/dane.txt', function(data)
 		{
-			$('#opis').html('<div>' + _id.text() + '</div>' + data + '<img><button>Wstecz</button>').slideDown('fast', function()
-			{
+			$('#opis').html('<div>' + _id.text() + '</div>' + data + '<img><button>Wstecz</button>').slideDown('fast').scrollTop(0);
 				$('#opis span').attr('id', _id.attr('id').replace('karta', ''));
 				getImg();
 				$('#opis>button').fadeIn('normal');
-			}).scrollTop(0);
+
 			$('body').css('overflow', 'hidden');
 		});
 	});
