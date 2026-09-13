@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="utf-8">
+		<script src="jquery.js"></script>
+		<script>
+		$(function()
+		{
+			$('p').html(new URLSearchParams(location.search).get('nazwa') + '<span> - notatki</span>');
+			$.get('karty/karta' + new URLSearchParams(location.search).get('karta') + '/notatki.txt', function(txt)
+			{
+				$('pre').text(txt);
+			});
+			document.title = $('p').text();
+		});
+	</script>
+	<style>
+		*
+			{
+			margin:0px;
+			padding:0px;
+			}
+		body
+			{
+			margin:25px;
+			background-color:white;
+			}
+		p
+			{
+			font-family:arial;
+			font-size:40px;
+			color:gray;
+			font-weight:bold;
+			}
+		span
+			{
+			color:silver;
+			font-weight:normal;
+			}
+		pre
+			{
+			margin-top:25px;
+			padding:25px;
+			background-color:silver;
+			border-style:none;
+			border-radius:25px;
+			font-family:'courier new';
+			font-size:30px;
+			color:black;
+			}
+	</style>
+	</head>
+	<body>
+		<p>&nbsp;</p>
+		<pre>&nbsp;</pre>
+	</body>
+</html>

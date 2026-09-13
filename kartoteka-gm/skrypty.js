@@ -69,7 +69,7 @@ $(function()
 		const _id = $(this);
 		$.get('karty/' + this.id + '/dane.txt', function(data)
 		{
-			$('#opis').html('<div>' + _id.find('span').text() + '</div>' + data + '<img><button>Wstecz</button>').slideDown('fast', function()
+			$('#opis').html('<div>' + _id.children('span').text() + '</div>' + data + '<img><button>Wstecz</button>').slideDown('fast', function()
 			{
 				$('#opis span').attr('id', _id.attr('id').replace('karta', ''));
 				getImg();
@@ -86,7 +86,7 @@ $(function()
 
 	$('#opis').on('click', '>a', function()
 	{
-		window.open('karty/karta' + $('#opis span').attr('id') + '/notatki.txt', '_blank');
+		window.open('notatki.html?nazwa=' + encodeURIComponent($('#opis div:first').text()) + '&karta=' + $('#opis span').attr('id'), '_blank');
 	});
 
 	$('#opis').on('click', '>button', function()
