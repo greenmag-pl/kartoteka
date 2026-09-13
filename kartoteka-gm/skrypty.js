@@ -8,12 +8,10 @@ function getImg()
 
 function De(s)
 {
-
-	const T1 = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
-	const T2 = ['-', '_', '|', '/', '\\', '[', ']', 'l', 'L', 'I'];
+	const t = [45, 95, 124, 47, 92, 91, 93, 108, 76, 73];
 	let wynik = '';
 	for (let i = 0; i < s.length; i++) wynik += s.charCodeAt(i).toString();
-	for (let i = 0; i < T1.length; i++) wynik = wynik.replaceAll(T1[i], T2[i]);
+	for (let i = 0; i < t.length; i++) wynik = wynik.replaceAll(i.toString(), String.fromCharCode(t[i]));
 	return wynik;
 }
 
