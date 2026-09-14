@@ -1,7 +1,6 @@
-function getImgAndTitle()
+function getImg()
 {
-	$('#opis>img').attr('src', 'karty/karta' + $('#opis span').attr('id') + '/obraz.jpg');
-	document.title = 'Kartoteka Zegarków - ' + $('#opis div:first').text();
+	$('#opis>img').attr('src', 'karty/karta' + $('#opis').data('nr') + '/obraz.jpg');
 }
 
 function De(s)
@@ -26,19 +25,19 @@ $(function()
 				{
 					$('#opis').html('<div>' + $('#karta' + userCard).text() + '</div>' + data + '<img>').show().scrollTop(0);
 					$('#opis span').html('&nbsp;');
-					$('#opis span').attr('id', userCard);
-					getImgAndTitle();
-					$(document).off('click', '#opis span').on('click', '#opis span', function()
-					{
-						if (navigator.share) navigator.share({title: $('#opis div:first').text(), url: window.location.href});
-						else navigator.clipboard.writeText(window.location.href);
-					});
+					$('#opis').data('nr', userCard);
+					getImg();
+					//$(document).off('click', '#opis span').on('click', '#opis span', function()
+					//{
+					//	if (navigator.share) navigator.share({title: $('#opis div:first').text(), url: window.location.href});
+					//	else navigator.clipboard.writeText(window.location.href);
+					//});
 				}
 				else
 				{
 					$('#opis').html('<div>' + $('#karta' + userCard).text() + '</div>' + data + '<img><button>Wstecz</button>').show().scrollTop(0);
-					$('#opis span').attr('id', userCard);
-					getImgAndTitle();
+					$('#opis').data('nr', userCard);
+					getImg();
 					$('#opis>button').fadeIn('normal');
 				};
 				$('body').css('overflow', 'hidden');
@@ -68,8 +67,8 @@ $(function()
 		$.get('karty/' + this.id + '/dane.txt', function(data)
 		{
 			$('#opis').html('<div>' + _id.text() + '</div>' + data + '<img><button>Wstecz</button>').slideDown('fast').scrollTop(0);
-			$('#opis span').attr('id', _id.attr('id').replace('karta', ''));
-			getImgAndTitle();
+			$('#opis').data('nr', _id.attr('id').replace('karta', ''));
+			getImg();
 			$('#opis>button').fadeIn('normal');
 			$('body').css('overflow', 'hidden');
 		});
@@ -82,7 +81,7 @@ $(function()
 
 	$('#opis').on('click', '>a', function()
 	{
-		window.open('notatki.html?nazwa=' + encodeURIComponent($('#opis div:first').text()) + '&karta=' + $('#opis span').attr('id'), '_blank');
+		window.open('notatki.html?nazwa=' + encodeURIComponent($('#opis div:first').text()) + '&karta=' + $('#opis').data('nr'), '_blank');
 	});
 
 	$('#opis').on('click', '>button', function()
@@ -90,15 +89,13 @@ $(function()
 		$(this).hide();
 		$('#opis').slideUp('fast');
 		$('body').css('overflow', 'auto');
-		if ($('#tytul').text().length > 18) document.title = $('#tytul').text().replace('Kartoteka Zegarków', 'Kartoteka Zegarków - ');
-		else document.title = $('#tytul').text();
 	});
 
 	$('#opis').on('click', 'span', function()
 	{
 		const url = new URL(window.location.href);
-		let result = url.origin + url.pathname + '?karta=' + this.id + '&wstecz';
-		if (navigator.share) navigator.share({title: $('#opis div:first').text(), text: 'lol', url: result});
+		let result = url.origin + url.pathname + '?karta=' +  $('#opis').data('nr') + '&wstecz';
+		if (navigator.share) navigator.share({title:document.title, text:$('#opis div:first').text()+'\n', url:result});
 		else navigator.clipboard.writeText(result);
 	});
 
