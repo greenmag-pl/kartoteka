@@ -1,5 +1,8 @@
-function getImg()
+function getNrAndImg(wstecz)
 {
+	$('#opis>div').eq(1).append('<span></span>');
+	if (wstecz) $('#opis span').text($('body>div[id^="karta"]').index($('#karta' + $('#opis').data('nr'))) + 1 + '/' + $('body>div[id^="karta"]').length);
+	else $('#opis span').html('&nbsp;');
 	$('#opis>img').attr('src', 'karty/karta' + $('#opis').data('nr') + '/obraz.jpg');
 }
 
@@ -21,23 +24,21 @@ $(function()
 		$.get('karty/karta' + userCard + '/dane.txt')
 			.done(function(data)
 			{
+				$('#opis').data('nr', userCard);
 				if (new URLSearchParams(location.search).get('wstecz') === null)
 				{
 					$('#opis').html('<div>' + $('#karta' + userCard).text() + '</div>' + data + '<img>').show().scrollTop(0);
-					$('#opis span').html('&nbsp;');
-					$('#opis').data('nr', userCard);
-					getImg();
-					//$(document).off('click', '#opis span').on('click', '#opis span', function()
-					//{
-					//	if (navigator.share) navigator.share({title: $('#opis div:first').text(), url: window.location.href});
-					//	else navigator.clipboard.writeText(window.location.href);
-					//});
+					getNrAndImg(false);
+					$(document).off('click', '#opis span').on('click', '#opis span', function()
+					{
+						if (navigator.share) navigator.share({title:document.title, text:$('#opis div:first').text()+'\n', url: window.location.href});
+						else navigator.clipboard.writeText(window.location.href);
+					});
 				}
 				else
 				{
 					$('#opis').html('<div>' + $('#karta' + userCard).text() + '</div>' + data + '<img><button>Wstecz</button>').show().scrollTop(0);
-					$('#opis').data('nr', userCard);
-					getImg();
+					getNrAndImg(true);
 					$('#opis>button').fadeIn('normal');
 				};
 				$('body').css('overflow', 'hidden');
@@ -66,9 +67,9 @@ $(function()
 		const _id = $(this);
 		$.get('karty/' + this.id + '/dane.txt', function(data)
 		{
-			$('#opis').html('<div>' + _id.text() + '</div>' + data + '<img><button>Wstecz</button>').slideDown('fast').scrollTop(0);
 			$('#opis').data('nr', _id.attr('id').replace('karta', ''));
-			getImg();
+			$('#opis').html('<div>' + _id.text() + '</div>' + data + '<img><button>Wstecz</button>').slideDown('fast').scrollTop(0);
+			getNrAndImg(true);
 			$('#opis>button').fadeIn('normal');
 			$('body').css('overflow', 'hidden');
 		});
@@ -89,6 +90,7 @@ $(function()
 		$(this).hide();
 		$('#opis').slideUp('fast');
 		$('body').css('overflow', 'auto');
+		$('#opis').data('nr', '0');
 	});
 
 	$('#opis').on('click', 'span', function()

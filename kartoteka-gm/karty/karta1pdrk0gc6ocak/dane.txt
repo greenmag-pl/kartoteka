@@ -1,4 +1,4 @@
-<div>OGÓLNE<span>16/16</span></div>
+<div>OGÓLNE</div>
 Producent: Vratislavia Conceptum<br>
 Model: Chronohistoria<br>
 Limitacja: -/150<br>
