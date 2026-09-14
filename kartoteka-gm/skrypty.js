@@ -98,7 +98,7 @@ $(function()
 	{
 		const url = new URL(window.location.href);
 		let result = url.origin + url.pathname + '?karta=' + this.id + '&wstecz';
-		if (navigator.share) navigator.share({title: $('#opis div:first').text(), 'lol', url: result});
+		if (navigator.share) navigator.share({title: $('#opis div:first').text(), text: 'lol', url: result});
 		else navigator.clipboard.writeText(result);
 	});
 
