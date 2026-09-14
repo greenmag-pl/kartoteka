@@ -1,6 +1,7 @@
-function getImg()
+function getImgAndTitle()
 {
 	$('#opis>img').attr('src', 'karty/karta' + $('#opis span').attr('id') + '/obraz.jpg');
+	document.title = 'Kartoteka Zegarków - ' + $('#opis div:first').text();
 }
 
 function De(s)
@@ -26,7 +27,7 @@ $(function()
 					$('#opis').html('<div>' + $('#karta' + userCard).text() + '</div>' + data + '<img>').show().scrollTop(0);
 					$('#opis span').html('&nbsp;');
 					$('#opis span').attr('id', userCard);
-					getImg();
+					getImgAndTitle();
 					$(document).off('click', '#opis span').on('click', '#opis span', function()
 					{
 						if (navigator.share) navigator.share({title: $('#opis div:first').text(), url: window.location.href});
@@ -37,20 +38,20 @@ $(function()
 				{
 					$('#opis').html('<div>' + $('#karta' + userCard).text() + '</div>' + data + '<img><button>Wstecz</button>').show().scrollTop(0);
 					$('#opis span').attr('id', userCard);
-					getImg();
+					getImgAndTitle();
 					$('#opis>button').fadeIn('normal');
 				};
+				$('body').css('overflow', 'hidden');
 			})
 			.fail(function()
 			{
-				$('#opis').css('padding', '0px').html('<p>Niewłaściwy parametr karty.</p>').show();
+				$('body').html('<p>Niewłaściwy parametr karty.</p>');
 			});
-		$('body').css('overflow', 'hidden');
 	}
 	else
 	{
 		let userPass = new URLSearchParams(location.search).get('klucz');
-		if (userPass === null) { userPass = ''; } else { userPass = De(userPass); }
+		if (userPass === null) userPass = ''; else userPass = De(userPass);
 		$.get('physicalpass', function(realPass)
 		{
 			if (userPass !== realPass) $('body').html('<p>Niewłaściwy klucz dostępu.</p>');
@@ -68,7 +69,7 @@ $(function()
 		{
 			$('#opis').html('<div>' + _id.text() + '</div>' + data + '<img><button>Wstecz</button>').slideDown('fast').scrollTop(0);
 			$('#opis span').attr('id', _id.attr('id').replace('karta', ''));
-			getImg();
+			getImgAndTitle();
 			$('#opis>button').fadeIn('normal');
 			$('body').css('overflow', 'hidden');
 		});
@@ -89,6 +90,8 @@ $(function()
 		$(this).hide();
 		$('#opis').slideUp('fast');
 		$('body').css('overflow', 'auto');
+		if ($('#tytul').text().length > 18) document.title = $('#tytul').text().replace('Kartoteka Zegarków', 'Kartoteka Zegarków - ');
+		else document.title = $('#tytul').text();
 	});
 
 	$('#opis').on('click', 'span', function()
