@@ -29,12 +29,6 @@ $(function()
 				{
 					$('#opis').html('<div>' + $('#karta' + userCard).text() + '</div>' + data + '<img>').show().scrollTop(0);
 					getNrAndImg(false);
-					$(document).off('click', '#opis span').on('click', '#opis span', function()
-					{
-						if (navigator.share) navigator.share({title:document.title, text:$('#opis div:first').text()+'\n', url: window.location.href});
-						else navigator.clipboard.writeText(window.location.href);
-					});
-				}
 				else
 				{
 					$('#opis').html('<div>' + $('#karta' + userCard).text() + '</div>' + data + '<img><button>Wstecz</button>').show().scrollTop(0);
@@ -95,8 +89,13 @@ $(function()
 
 	$('#opis').on('click', 'span', function()
 	{
-		const url = new URL(window.location.href);
-		let result = url.origin + url.pathname + '?karta=' +  $('#opis').data('nr') + '&wstecz';
+		let result;
+		if ($('#opis span').html() === '&nbsp;') result = window.location.href;
+		else
+		{
+			const url = new URL(window.location.href);
+			result = url.origin + url.pathname + '?karta=' +  $('#opis').data('nr') + '&wstecz';
+		}
 		if (navigator.share) navigator.share({title:document.title, text:$('#opis div:first').text()+'\n', url:result});
 		else navigator.clipboard.writeText(result);
 	});
