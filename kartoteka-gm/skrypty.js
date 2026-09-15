@@ -29,6 +29,7 @@ $(function()
 				{
 					$('#opis').html('<div>' + $('#karta' + userCard).text() + '</div>' + data + '<img>').show().scrollTop(0);
 					getNrAndImg(false);
+				}
 				else
 				{
 					$('#opis').html('<div>' + $('#karta' + userCard).text() + '</div>' + data + '<img><button>Wstecz</button>').show().scrollTop(0);
