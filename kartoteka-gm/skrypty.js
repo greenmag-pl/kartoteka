@@ -77,7 +77,7 @@ $(function()
 
 	$('#opis').on('click', '>a', function()
 	{
-		window.open('notatki.html?nazwa=' + encodeURIComponent($('#opis div:first').text()) + '&karta=' + $('#opis').data('nr'), '_blank');
+		window.open('notatki.html?nazwa=' + encodeURIComponent($('#opis>div:first').text()) + '&karta=' + $('#opis').data('nr'), '_blank');
 	});
 
 	$('#opis').on('click', '>button', function()
@@ -97,7 +97,7 @@ $(function()
 			const url = new URL(window.location.href);
 			result = url.origin + url.pathname + '?karta=' +  $('#opis').data('nr') + '&wstecz';
 		}
-		if (navigator.share) navigator.share({title:document.title, text:$('#opis div:first').text()+'\n', url:result});
+		if (navigator.share) navigator.share({title:document.title, text:$('#opis>div:first').text()+'\n', url:result});
 		else navigator.clipboard.writeText(result);
 	});
 
