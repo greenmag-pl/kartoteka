@@ -8,7 +8,7 @@
 		<script>
 			$(function()
 			{
-				$('p').html(new URLSearchParams(location.search).get('nazwa') + '<span> - notatki</span>');
+				$('p').html(new URLSearchParams(location.search).get('nazwa') + '<span> :notatki</span>');
 				$.get('karty/karta' + new URLSearchParams(location.search).get('karta') + '/notatki.txt', function(txt)
 				{
 					$('pre').text(txt);
