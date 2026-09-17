@@ -1,8 +1,7 @@
 function getNrAndImg(wstecz)
 {
-	$('#opis>div').eq(1).append('<span></span>');
+	$('#opis>div').eq(1).append('<span>&nbsp;</span>');
 	if (wstecz) $('#opis span').text($('body>div[id^="karta"]').index($('#karta' + $('#opis').data('nr'))) + 1 + '/' + $('body>div[id^="karta"]').length);
-	else $('#opis span').html('&nbsp;');
 	$('#opis>img').css('background-image', $('#karta' + $('#opis').data('nr')).css('background-image'));
 }
 
