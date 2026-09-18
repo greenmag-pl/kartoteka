@@ -43,7 +43,7 @@ body
 
 #tytul
 	{
-	margin-bottom:50px;
+	margin-bottom:40px;
 	padding:50px;
 	background-image:linear-gradient(to right, #434955, black, #434955);
 	text-shadow:0px 0px 25px black;
@@ -119,7 +119,7 @@ div[id^="karta"]:active>span
 	{
 	width:90%;
 	margin:auto;
-	margin-top:50px;
+	margin-top:40px;
 	padding:50px;
 	font-family:arial;
 	font-size:25px;
