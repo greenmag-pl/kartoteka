@@ -77,10 +77,9 @@ $(function()
 	})
 	.click(function()
 	{
-		const _id = $(this);
+		$('#opis').data('nr', this.id.replace('karta', ''));
 		$.get('karty/' + this.id + '/dane.txt', function(data)
 		{
-			$('#opis').data('nr', _id.attr('id').replace('karta', ''));
 			$('#opis').html('<div>' + getTitle() + '</div>' + data + '<img><button>Wstecz</button>').slideDown('fast').scrollTop(0);
 			getNrAndImg(true);
 			$('#opis>button').fadeIn('normal');
@@ -115,7 +114,7 @@ $(function()
 			const url = new URL(window.location.href);
 			result = url.origin + url.pathname + '?karta=' +  $('#opis').data('nr') + '&wstecz';
 		}
-		if (navigator.share) navigator.share({title:document.title + ' - ' + getTitle(), text:getTitle() + '\n', url:result});
+		if (navigator.share) navigator.share({title:document.title, text:getTitle() + '\n', url:result});
 		else navigator.clipboard.writeText(result);
 	});
 
