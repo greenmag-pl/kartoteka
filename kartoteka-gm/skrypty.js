@@ -1,17 +1,22 @@
+function loadImg(target, src)
+{
+	const img = new Image();
+	img.onload = function()
+	{
+		$(target).css('background-image', 'url("' + img.src + '")');
+	};
+	img.onerror = function()
+	{
+		$(target).css('background-image', 'url("brak.jpg")');
+	};
+	img.src = src;
+}
+
 function getNrAndImg(wstecz)
 {
 	$('#opis>div').eq(1).append('<span>&nbsp;</span>');
 	if (wstecz) $('#opis span').text($('body>div[id^="karta"]').index($('#karta' + $('#opis').data('nr'))) + 1 + '/' + $('body>div[id^="karta"]').length);
-	const img = new Image();
-	img.onload = function()
-	{
-		$('#opis>img').css('background-image', 'url("' + img.src + '")');
-	};
-	img.onerror = function()
-	{
-		$('#opis>img').css('background-image', 'url("brak.jpg")');
-	};
-	img.src = 'karty/karta' + $('#opis').data('nr') + '/obraz.jpg';
+	loadImg('#opis>img', 'karty/karta' + $('#opis').data('nr') + '/obraz.jpg');
 }
 
 function De(s)
@@ -63,18 +68,8 @@ $(function()
 
 	$('div[id^="karta"]').wrapInner('<span></span>').each(function()
 	{
-		const _id = $(this);
-		const img = new Image();
-		img.onload = function()
-		{
-			_id.css('background-image', 'url("' + img.src + '")');
-		};
-		img.onerror = function()
-		{
-			_id.css('background-image', 'url("brak.jpg")');
-		};
-		img.src = 'karty/' + this.id + '/obraz.jpg';
-		})
+		loadImg(this, 'karty/' + this.id + '/obraz.jpg');
+	})
 	.click(function()
 	{
 		const _id = $(this);
