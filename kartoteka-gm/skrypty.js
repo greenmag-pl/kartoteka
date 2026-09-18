@@ -1,3 +1,8 @@
+function getTitle()
+{
+	return $('#karta' + $('#opis').data('nr')).text();
+}
+
 function loadImg(target, src)
 {
 	const img = new Image();
@@ -9,14 +14,14 @@ function loadImg(target, src)
 	{
 		$(target).css('background-image', 'url("brak.jpg")');
 	};
-	img.src = src;
+	img.src = 'karty/' + src  + '/obraz.jpg';
 }
 
 function getNrAndImg(wstecz)
 {
 	$('#opis>div').eq(1).append('<span>&nbsp;</span>');
 	if (wstecz) $('#opis span').text($('body>div[id^="karta"]').index($('#karta' + $('#opis').data('nr'))) + 1 + '/' + $('body>div[id^="karta"]').length);
-	loadImg('#opis>img', 'karty/karta' + $('#opis').data('nr') + '/obraz.jpg');
+	loadImg('#opis>img', 'karta' + $('#opis').data('nr'));
 }
 
 function De(s)
@@ -40,15 +45,15 @@ $(function()
 				$('#opis').data('nr', userCard);
 				if (new URLSearchParams(location.search).get('wstecz') === null)
 				{
-					$('#opis').html('<div>' + $('#karta' + userCard).text() + '</div>' + data + '<img>').show().scrollTop(0);
+					$('#opis').html('<div>' + getTitle() + '</div>' + data + '<img>').show().scrollTop(0);
 					getNrAndImg(false);
 				}
 				else
 				{
-					$('#opis').html('<div>' + $('#karta' + userCard).text() + '</div>' + data + '<img><button>Wstecz</button>').show().scrollTop(0);
+					$('#opis').html('<div>' + getTitle() + '</div>' + data + '<img><button>Wstecz</button>').show().scrollTop(0);
 					getNrAndImg(true);
 					$('#opis>button').fadeIn('normal');
-				};
+				}
 				$('body').css('overflow', 'hidden');
 			})
 			.fail(function()
@@ -64,11 +69,11 @@ $(function()
 		{
 			if (userPass !== realPass) $('body').html('<p>Niewłaściwy klucz dostępu.</p>');
 		});
-	};
+	}
 
 	$('div[id^="karta"]').wrapInner('<span></span>').each(function()
 	{
-		loadImg(this, 'karty/' + this.id + '/obraz.jpg');
+		loadImg(this, this.id);
 	})
 	.click(function()
 	{
@@ -76,7 +81,7 @@ $(function()
 		$.get('karty/' + this.id + '/dane.txt', function(data)
 		{
 			$('#opis').data('nr', _id.attr('id').replace('karta', ''));
-			$('#opis').html('<div>' + _id.text() + '</div>' + data + '<img><button>Wstecz</button>').slideDown('fast').scrollTop(0);
+			$('#opis').html('<div>' + getTitle() + '</div>' + data + '<img><button>Wstecz</button>').slideDown('fast').scrollTop(0);
 			getNrAndImg(true);
 			$('#opis>button').fadeIn('normal');
 			$('body').css('overflow', 'hidden');
@@ -90,7 +95,7 @@ $(function()
 
 	$('#opis').on('click', '>a', function()
 	{
-		window.open('notatki.html?nazwa=' + encodeURIComponent($('#opis>div:first').text()) + '&karta=' + $('#opis').data('nr'), '_blank');
+		window.open('notatki.html?nazwa=' + encodeURIComponent(getTitle()) + '&karta=' + $('#opis').data('nr'), '_blank');
 	});
 
 	$('#opis').on('click', '>button', function()
@@ -110,7 +115,7 @@ $(function()
 			const url = new URL(window.location.href);
 			result = url.origin + url.pathname + '?karta=' +  $('#opis').data('nr') + '&wstecz';
 		}
-		if (navigator.share) navigator.share({title:document.title, text:$('#opis>div:first').text()+'\n', url:result});
+		if (navigator.share) navigator.share({title:document.title + ' - ' + getTitle(), text:getTitle() + '\n', url:result});
 		else navigator.clipboard.writeText(result);
 	});
 
