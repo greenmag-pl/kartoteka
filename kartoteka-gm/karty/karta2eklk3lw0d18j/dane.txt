@@ -8,8 +8,8 @@ Data zakupu: 28.08.2010<br>
 Typ: Kwarcowy<br>
 Producent: Seiko<br>
 Kaliber: 7N42<br>
-&nbsp;- Stopsekunda<br>
-&nbsp;- Dzień miesiąca<br>
+&nbsp;&bull; Stopsekunda<br>
+&nbsp;&bull; Dzień miesiąca<br>
 <div>KOPERTA</div>
 Materiał: Stal szlachetna<br>
 Szkło: Hardlex<br>
@@ -20,4 +20,4 @@ Wysokość L2L: 44mm<br>
 Grubość: 11,5mm<br>
 Mocowanie paska: 26mm<br>
 <div>NOTATKI</div>
-<i>Brak notatek</i><br>
+<i>&times; Brak notatek</i><br>
