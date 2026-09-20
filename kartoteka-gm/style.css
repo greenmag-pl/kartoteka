@@ -167,7 +167,7 @@ div[id^="karta"]:active>span
 
 #opis>div:not(:first-child)
 	{
-	margin:50px 0px 10px 0px;
+	margin:50px 0px 15px 0px;
 	padding-bottom:10px;
 	border-style:none none solid none;
 	border-color:gray;
@@ -224,8 +224,9 @@ div[id^="karta"]:active>span
 #opis>img
 	{
 	margin-top:50px;
-	width:298px;
-	height:298px;
+	width:400px;
+	height:400px;
+	background-size:100% 100%;
 	border-style:solid;
 	border-color:gray;
 	border-width:1px;
