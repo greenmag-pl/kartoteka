@@ -72,6 +72,9 @@ body
 
 div[id^="karta"]
 	{
+
+background-image:url('808.gif');
+
 	display:inline-block;
 	overflow:hidden;
 	margin:10px;
@@ -167,7 +170,7 @@ div[id^="karta"]:active>span
 
 #opis>div:not(:first-child)
 	{
-	margin:50px 0px 15px 0px;
+	margin:50px 0px 10px 0px;
 	padding-bottom:10px;
 	border-style:none none solid none;
 	border-color:gray;
