@@ -72,12 +72,6 @@ body
 
 div[id^="karta"]
 	{
-
-background-color:black;
-background-image:url('load.gif');
-background-repeat:no-repeat;
-background-position:center 255px;
-
 	display:inline-block;
 	overflow:hidden;
 	margin:10px;

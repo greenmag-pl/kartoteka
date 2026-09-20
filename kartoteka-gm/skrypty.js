@@ -5,11 +5,6 @@ function getTitle()
 
 function loadImg(target, src)
 {
-
-$(target).css('background-position', 'center center');
-
-
-
 	const img = new Image();
 	img.onload = function()
 	{
