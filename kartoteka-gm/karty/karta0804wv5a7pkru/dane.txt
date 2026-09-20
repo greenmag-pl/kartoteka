@@ -15,4 +15,4 @@ Dekiel: Zakręcany<br>
 Szerokość: 33,5mm<br>
 Mocowanie paska: 17mm<br>
 <div>NOTATKI</div>
-<a>&checkmark; Otwórz plik</a><br>
+<a>7 &checkmark; Otwórz plik</a><br>
