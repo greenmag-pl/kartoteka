@@ -6,7 +6,6 @@ function getTitle()
 function loadImg(target, src)
 {
 
-background-position:center 255px;
 $(target).css('background-iposition', 'center center');
 
 	const img = new Image();
