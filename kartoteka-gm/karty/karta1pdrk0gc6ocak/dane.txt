@@ -1,7 +1,7 @@
 <div>OGÓLNE</div>
 Producent: Vratislavia Conceptum<br>
 Model: Chronohistoria<br>
-Limitacja: /150<br>
+Limitacja: -/150<br>
 Rok produkcji: 2021<br>
 Data zakupu: 22.12.2021<br>
 <div>MECHANIZM</div>
