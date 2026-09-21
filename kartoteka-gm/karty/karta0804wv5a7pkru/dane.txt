@@ -8,13 +8,13 @@ Data zakupu: 05.11.2020<br>
 Typ: Meca-Quartz<br>
 Producent: Seiko<br>
 Kaliber: VK63<br>
-&nbsp;- Stopsekunda<br>
-&nbsp;- Chronograf<br>
-&nbsp;- Ghost date<br>
+• Stopsekunda<br>
+• Chronograf<br>
+• Ghost date<br>
 <div>KOPERTA</div>
 Materiał: Stal szlachetna<br>
 Szkło: Mineralne K1<br>
-&nbsp;- Antyrefleks wewnętrzny<br>
+• Antyrefleks wewnętrzny<br>
 Dekiel: Zakręcany<br>
 Wodoszczelność: 50m<br>
 Szerokość: 40mm<br>

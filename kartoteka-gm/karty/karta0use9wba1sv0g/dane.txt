@@ -9,19 +9,19 @@ Data zakupu: 13.10.2016<br>
 Typ: Solarny<br>
 Producent: Seiko<br>
 Kaliber: V175<br>
-&nbsp;- Stopsekunda<br>
-&nbsp;- Dzień miesiąca<br>
-&nbsp;- Chronograf<br>
+• Stopsekunda<br>
+• Dzień miesiąca<br>
+• Chronograf<br>
 <div>KOPERTA</div>
 Materiał: Stal szlachetna<br>
 Szkło: Hardlex<br>
 Dekiel: Zakręcany<br>
 Wodoszczelność: 200m<br>
-&nbsp;- Zakręcana koronka<br>
+• Zakręcana koronka<br>
 Szerokość: 44mm<br>
 Wysokość L2L: 50mm<br>
 Grubość: 14mm<br>
 Mocowanie paska: 20mm<br>
-&nbsp;- Bransoleta w zestawie<br>
+• Bransoleta w zestawie<br>
 <div>NOTATKI</div>
 <a>Otwórz plik</a><br>

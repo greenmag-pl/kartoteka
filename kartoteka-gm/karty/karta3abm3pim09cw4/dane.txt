@@ -2,7 +2,7 @@
 Producent: Adriatica<br>
 Model: Retro<br>
 Referencja: A1081.5156Q<br>
-&nbsp;- Zegarek poza kolekcją<br>
+• Zegarek poza kolekcją<br>
 <div>MECHANIZM</div>
 Typ: Kwarcowy<br>
 Producent: Ronda<br>
@@ -14,6 +14,6 @@ Wodoszczelność: 30m<br>
 Szerokość: 39mm<br>
 Grubość: 8mm<br>
 Waga: 106g<br>
-&nbsp;- Bransoleta w zestawie<br>
+• Bransoleta w zestawie<br>
 <div>NOTATKI</div>
 <a>Otwórz plik</a><br>

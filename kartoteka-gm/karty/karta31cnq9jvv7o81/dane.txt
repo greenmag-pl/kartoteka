@@ -7,9 +7,9 @@ Data zakupu: 15.12.2018<br>
 Typ: Automatyczny<br>
 Producent: Orient<br>
 Kaliber: F6724<br>
-&nbsp;- Stopsekunda<br>
-&nbsp;- Dokręcanie<br>
-&nbsp;- Dzień miesiąca<br>
+• Stopsekunda<br>
+• Dokręcanie<br>
+• Dzień miesiąca<br>
 <div>KOPERTA</div>
 Materiał: Stal szlachetna<br>
 Szkło: Mineralne<br>
