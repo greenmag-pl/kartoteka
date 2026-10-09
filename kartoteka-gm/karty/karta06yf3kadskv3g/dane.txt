@@ -1,5 +1,0 @@
-<div>OGÓLNE</div>
-<div>MECHANIZM</div>
-<div>KOPERTA</div>
-<div>NOTATKI</div>
-<i>Brak notatek</i><br>
