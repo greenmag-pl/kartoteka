@@ -28,7 +28,7 @@ function De(s)
 {
 	const t = [40, 123, 91, 60, 47, 92, 62, 93, 125, 41];
 	let wynik = '';
-	for (let i = 0; i < s.length; i++) wynik += s.charCodeAt(i).toString();
+	for (let i = 0; i < s.length; i++) wynik += (s.charCodeAt(i) + i).toString();
 	for (let i = 0; i < t.length; i++) wynik = wynik.replaceAll(i.toString(), String.fromCharCode(t[i]));
 	return wynik;
 }
