@@ -24,13 +24,21 @@ function getNrAndImg(wstecz)
 	loadImg('#opis>img', 'karta' + $('#opis').data('nr'));
 }
 
-function De(s)
+function De()
 {
-	const t = [40, 123, 91, 60, 47, 92, 62, 93, 125, 41];
-	let wynik = '';
-	for (let i = 0; i < s.length; i++) wynik += (s.charCodeAt(i) + i).toString();
-	for (let i = 0; i < t.length; i++) wynik = wynik.replaceAll(i.toString(), String.fromCharCode(t[i]));
-	return wynik;
+	let userPass = new URLSearchParams(location.search).get('klucz');
+	if (userPass === null) userPass = ''; else
+		{
+			const t = [40, 123, 91, 60, 47, 92, 62, 93, 125, 41];
+			let wynik = '';
+			for (let i = 0; i < userPass.length; i++) wynik += (userPass.charCodeAt(i) + i).toString();
+			for (let i = 0; i < t.length; i++) wynik = wynik.replaceAll(i.toString(), String.fromCharCode(t[i]));
+			userPass = wynik;
+		}
+	return $.get('physicalpass').then(function(realPass)
+		{
+		return userPass === realPass;
+		});
 }
 
 $(function()
@@ -63,11 +71,9 @@ $(function()
 	}
 	else
 	{
-		let userPass = new URLSearchParams(location.search).get('klucz');
-		if (userPass === null) userPass = ''; else userPass = De(userPass);
-		$.get('physicalpass', function(realPass)
+		De().then(function(wynik)
 		{
-			if (userPass !== realPass) $('body').html('<p>Niewłaściwy klucz dostępu.</p>');
+			if (!wynik) $('body').html('<p>Niewłaściwy klucz dostępu.</p>');
 		});
 	}
 
