@@ -51,6 +51,7 @@ $(function()
 		$.get('karty/karta' + userCard + '/dane.txt')
 			.done(function(data)
 			{
+				$('#opis').data('nr', userCard);
 				De().then(function(wynik)
 				{
 				if (wynik)
