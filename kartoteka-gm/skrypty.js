@@ -54,16 +54,16 @@ $(function()
 				$('#opis').data('nr', userCard);
 				De().then(function(wynik)
 				{
-				if (wynik)
+					if (wynik)
 					{
-					$('#opis').html('<div>' + getTitle() + '</div>' + data + '<img><button>Wstecz</button>').show().scrollTop(0);
-					getDetal(true);
-					$('#opis>button').fadeIn('normal');
+						$('#opis').html('<div>' + getTitle() + '</div>' + data + '<img><button>Wstecz</button>').show().scrollTop(0);
+						getDetal(true);
+						$('#opis>button').fadeIn('normal');
 					}
-				else
+					else
 					{
-					$('#opis').html('<div>' + getTitle() + '</div>' + data + '<img>').show().scrollTop(0);
-					getDetal(false);
+						$('#opis').html('<div>' + getTitle() + '</div>' + data + '<img>').show().scrollTop(0);
+						getDetal(false);
 					}
 				});
 				$('body').css('overflow', 'hidden');
