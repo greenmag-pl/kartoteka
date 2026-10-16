@@ -17,15 +17,11 @@ function loadImg(target, src)
 	img.src = 'karty/' + src  + '/obraz.jpg';
 }
 
-function getNrAndImg(wstecz)
+function getDetal(wstecz)
 {
 	$('#opis>div').eq(1).append('<span>&nbsp;</span>');
 	if (wstecz) $('#opis span').text($('body>div[id^="karta"]').index($('#karta' + $('#opis').data('nr'))) + 1 + '/' + $('body>div[id^="karta"]').length);
-	else
-	De().then(function(wynik)
-	{
-		if (!wynik) $('a').replaceWith('<i>Niedostępne</i>');
-	});
+	else $('a').replaceWith('<i>Niedostępne</i>');
 	loadImg('#opis>img', 'karta' + $('#opis').data('nr'));
 }
 
@@ -33,17 +29,17 @@ function De()
 {
 	let userPass = new URLSearchParams(location.search).get('klucz');
 	if (userPass === null) userPass = ''; else
-		{
-			const t = [40, 123, 91, 60, 47, 92, 62, 93, 125, 41];
-			let wynik = '';
-			for (let i = 0; i < userPass.length; i++) wynik += (userPass.charCodeAt(i) + i).toString();
-			for (let i = 0; i < t.length; i++) wynik = wynik.replaceAll(i.toString(), String.fromCharCode(t[i]));
-			userPass = wynik;
-		}
+	{
+		const t = [40, 123, 91, 60, 47, 92, 62, 93, 125, 41];
+		let wynik = '';
+		for (let i = 0; i < userPass.length; i++) wynik += (userPass.charCodeAt(i) + i).toString();
+		for (let i = 0; i < t.length; i++) wynik = wynik.replaceAll(i.toString(), String.fromCharCode(t[i]));
+		userPass = wynik;
+	}
 	return $.get('physicalpass').then(function(realPass)
-		{
+	{
 		return userPass === realPass;
-		});
+	});
 }
 
 $(function()
@@ -55,18 +51,20 @@ $(function()
 		$.get('karty/karta' + userCard + '/dane.txt')
 			.done(function(data)
 			{
-				$('#opis').data('nr', userCard);
-				if (new URLSearchParams(location.search).get('wstecz') === null)
+				De().then(function(wynik)
 				{
-					$('#opis').html('<div>' + getTitle() + '</div>' + data + '<img>').show().scrollTop(0);
-					getNrAndImg(false);
-				}
-				else
-				{
+				if (wynik)
+					{
 					$('#opis').html('<div>' + getTitle() + '</div>' + data + '<img><button>Wstecz</button>').show().scrollTop(0);
-					getNrAndImg(true);
+					getDetal(true);
 					$('#opis>button').fadeIn('normal');
-				}
+					}
+				else
+					{
+					$('#opis').html('<div>' + getTitle() + '</div>' + data + '<img>').show().scrollTop(0);
+					getDetal(false);
+					}
+				});
 				$('body').css('overflow', 'hidden');
 			})
 			.fail(function()
@@ -92,7 +90,7 @@ $(function()
 		$.get('karty/' + this.id + '/dane.txt', function(data)
 		{
 			$('#opis').html('<div>' + getTitle() + '</div>' + data + '<img><button>Wstecz</button>').slideDown('fast').scrollTop(0);
-			getNrAndImg(true);
+			getDetal(true);
 			$('#opis>button').fadeIn('normal');
 			$('body').css('overflow', 'hidden');
 		});
