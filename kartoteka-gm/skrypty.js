@@ -21,6 +21,11 @@ function getNrAndImg(wstecz)
 {
 	$('#opis>div').eq(1).append('<span>&nbsp;</span>');
 	if (wstecz) $('#opis span').text($('body>div[id^="karta"]').index($('#karta' + $('#opis').data('nr'))) + 1 + '/' + $('body>div[id^="karta"]').length);
+	else
+	De().then(function(wynik)
+	{
+		if (!wynik) $('a').replaceWith('<i>Niedostępne</i>');
+	});
 	loadImg('#opis>img', 'karta' + $('#opis').data('nr'));
 }
 
