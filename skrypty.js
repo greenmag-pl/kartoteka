@@ -24,13 +24,7 @@ function getNrAndImg(wstecz)
 	else
 	De().then(function(wynik)
 	{
-		if (!wynik)
-			{
-			$('#opis>div').last().remove();
-			$('#opis>a').last().remove();
-			$('#opis>i').last().remove();
-			$('#opis>br').last().remove();
-			}
+		if (!wynik) $('a').replaceWith('<i>Niedostępne</i>');
 	});
 	loadImg('#opis>img', 'karta' + $('#opis').data('nr'));
 }
