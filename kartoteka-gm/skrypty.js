@@ -58,7 +58,7 @@ $(function()
 					{
 						$('#opis').html('<div>' + getTitle() + '</div>' + data + '<img><button>Wstecz</button>').show().scrollTop(0);
 						getDetal(true);
-						$('#opis>button').fadeIn('1000');
+						$('#opis>button').fadeIn(1000);
 					}
 					else
 					{
@@ -92,7 +92,7 @@ $(function()
 		{
 			$('#opis').html('<div>' + getTitle() + '</div>' + data + '<img><button>Wstecz</button>').slideDown('fast').scrollTop(0);
 			getDetal(true);
-			$('#opis>button').fadeIn('1000');
+			$('#opis>button').fadeIn(1000);
 			$('body').css('overflow', 'hidden');
 		});
 	});
