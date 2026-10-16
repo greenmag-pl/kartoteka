@@ -17,10 +17,10 @@ function loadImg(target, src)
 	img.src = 'karty/' + src  + '/obraz.jpg';
 }
 
-function getDetal(wstecz)
+function getDetal(full)
 {
 	$('#opis>div').eq(1).append('<span>&nbsp;</span>');
-	if (wstecz) $('#opis span').text($('body>div[id^="karta"]').index($('#karta' + $('#opis').data('nr'))) + 1 + '/' + $('body>div[id^="karta"]').length);
+	if (full) $('#opis span').text($('body>div[id^="karta"]').index($('#karta' + $('#opis').data('nr'))) + 1 + '/' + $('body>div[id^="karta"]').length);
 	else $('a').replaceWith('<i>Niedostępne</i>');
 	loadImg('#opis>img', 'karta' + $('#opis').data('nr'));
 }

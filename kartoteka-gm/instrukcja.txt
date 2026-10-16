@@ -10,8 +10,8 @@ https://domena.pl/kartoteka-html/?klucz=kluczdostepu
 Automatyczne wyświetlenie karty - bez ograniczeń:
 https://domena.pl/kartoteka-html/?klucz=kluczdostepu&karta=0000123456789
 
-Automatyczne wyświetlenie karty - z ograniczeniem
-(brak możliwości powrotu do kartoteki, brak numeru karty/ilości kart, brak dostępu do notatek):
+Automatyczne wyświetlenie karty - z ograniczeniami:
+(brak możliwości powrotu do kartoteki, brak numeru karty/ilości kart, brak dostępu do notatek)
 https://domena.pl/kartoteka-html/?karta=0000123456789
 
 -----------------------------------------------------------------------------------------------
