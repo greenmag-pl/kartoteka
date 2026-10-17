@@ -248,7 +248,7 @@ div[id^="karta"]:active>span
 	font-family:arial;
 	font-size:40px;
 	color:silver;
-	transition:border-color 0.25s, color 0.25s;
+	transition:all 0.25s;
 	}
 
 #opis>button:active
