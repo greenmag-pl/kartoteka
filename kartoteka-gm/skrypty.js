@@ -125,7 +125,7 @@ $(function()
 			if (userPass === null) result = url.origin + url.pathname + '?karta=' +  $('#opis').data('nr');
 			else result = url.origin + url.pathname + '?klucz=' + userPass + '&karta=' +  $('#opis').data('nr');
 		}
-		if (navigator.share) navigator.share({title:document.title + '-' + getTitle(), url:result});
+		if (navigator.share) navigator.share({title:document.title, text:getTitle() + '\n', url:result});
 		else navigator.clipboard.writeText(result);
 	});
 
