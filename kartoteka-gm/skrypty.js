@@ -57,8 +57,8 @@ $(function()
 					if (wynik)
 					{
 						$('#opis').html('<div>' + getTitle() + '</div>' + data + '<img><button>Wstecz</button>').show().scrollTop(0);
+						$('#opis>button').fadeIn('normal');
 						getDetal(true);
-						$('#opis>button').fadeIn('slow');
 					}
 					else
 					{
@@ -90,9 +90,11 @@ $(function()
 		$('#opis').data('nr', this.id.replace('karta', ''));
 		$.get('karty/' + this.id + '/dane.txt', function(data)
 		{
-			$('#opis').html('<div>' + getTitle() + '</div>' + data + '<img><button>Wstecz</button>').slideDown('fast').scrollTop(0);
+			$('#opis').html('<div>' + getTitle() + '</div>' + data + '<img><button>Wstecz</button>').slideDown('fast', function()
+			{
+				$('#opis>button').fadeIn('normal');
+			}).scrollTop(0);
 			getDetal(true);
-			$('#opis>button').fadeIn('slow');
 			$('body').css('overflow', 'hidden');
 		});
 	});
