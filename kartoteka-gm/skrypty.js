@@ -58,13 +58,10 @@ $(function()
 					{
 						$('#opis').html('<div>' + getTitle() + '</div>' + data + '<img><button>Wstecz</button>').show().scrollTop(0);
 						$('#opis>button').fadeIn('normal');
-						getDetal(true);
 					}
 					else
-					{
 						$('#opis').html('<div>' + getTitle() + '</div>' + data + '<img>').show().scrollTop(0);
-						getDetal(false);
-					}
+					getDetal(wynik);
 				});
 				$('body').css('overflow', 'hidden');
 			})
