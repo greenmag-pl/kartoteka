@@ -44,7 +44,7 @@ function De()
 
 $(function()
 {
-
+	$('body').append('<div id="opis"></div>');
 	const userCard = new URLSearchParams(location.search).get('karta');
 	if (userCard)
 	{
