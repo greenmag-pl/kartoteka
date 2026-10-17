@@ -96,7 +96,7 @@ $(function()
 		});
 	});
 
-	$('#stopka').prepend('© 2025-' + new Date().getFullYear() + ' ').click(function()
+	$('div:last-of-type').prepend('© 2025-' + new Date().getFullYear() + ' ').click(function()
 	{
 		window.location.href = 'https://greenmag-pl.github.io/kartoteka';
 	});

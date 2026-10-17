@@ -41,7 +41,7 @@ body
 	font-size:0px;
 	}
 
-#tytul
+div:first-of-type
 	{
 	margin-bottom:40px;
 	padding:50px;
@@ -115,7 +115,7 @@ div[id^="karta"]:active>span
 	opacity:1;
 	}
 
-#stopka
+div:last-of-type
 	{
 	width:90%;
 	margin:auto;
@@ -132,7 +132,7 @@ div[id^="karta"]:active>span
 	transition:all 0.25s;
 	}
 
-#stopka:active
+div:last-of-type:active
 	{
 	color:#5DADEC;
 	}
@@ -157,7 +157,7 @@ div[id^="karta"]:active>span
 	color:silver;
 	}
 
-#opis>div:first-child
+#opis>div:first-of-type
 	{
 	letter-spacing:normal;
 	font-family:goldman;
@@ -165,7 +165,7 @@ div[id^="karta"]:active>span
 	color:#5DADEC;
 	}
 
-#opis>div:not(:first-child)
+#opis>div:not(:first-of-type)
 	{
 	margin:50px 0px 15px 0px;
 	padding-bottom:10px;
