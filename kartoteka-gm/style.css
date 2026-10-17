@@ -240,8 +240,7 @@ div[id^="karta"]:active>span
 	right:50px;
 	bottom:50px;
 	padding:50px 100px;
-	background-image:linear-gradient(to right, #D32323, black, #D32323);
-background-image:linear-gradient(to right, #D32323, black, black, #D32323);
+background-image:linear-gradient(to right, #D32323, black, black, black, #D32323);
 background-position:center;
 background-size:200%;
 	border-style:solid;
