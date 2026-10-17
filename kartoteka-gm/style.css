@@ -240,9 +240,7 @@ div[id^="karta"]:active>span
 	right:50px;
 	bottom:50px;
 	padding:50px 100px;
-background-image:linear-gradient(to bottom, #D32323, gray, black, gray, #D32323);
-background-position:center;
-background-size:200%;
+	background-image:linear-gradient(to right, #434955, black, #434955);
 	border-style:solid;
 	border-color:#D32323;
 	border-width:1px;
@@ -250,12 +248,12 @@ background-size:200%;
 	font-family:arial;
 	font-size:40px;
 	color:silver;
-	transition: background-size 0.5s, border-color 0.25s, color 0.25s;
+	transition:border-color 0.25s, color 0.25s;
 	}
 
 #opis>button:active
 	{
-	background-size:100%;
+	background-image:linear-gradient(to right, #D32323, black, #D32323);
 	border-color:black;
 	color:white;
 	}
