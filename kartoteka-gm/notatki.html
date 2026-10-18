@@ -8,7 +8,7 @@
 		<script>
 			$(function()
 			{
-				$('p').text(new URLSearchParams(location.search).get('nazwa'));
+				$('p>span').text(' ' + new URLSearchParams(location.search).get('nazwa'));
 				$.get('karty/karta' + new URLSearchParams(location.search).get('karta') + '/notatki.txt', function(txt)
 				{
 					$('pre').text(txt);
@@ -24,15 +24,19 @@
 			body
 				{
 				margin:25px;
-				background-color:gray;
+				background-color:#434955;
 				}
 			p
 				{
 				padding:10px 25px 25px 25px;
 				font-family:arial;
 				font-size:40px;
-				color:white;
+				color:#FDAB40;
 				font-weight:bold;
+				}
+			span
+				{
+				color:#5DADEC;
 				}
 			pre
 				{
@@ -49,7 +53,7 @@
 		</style>
 	</head>
 	<body>
-		<p></p>
+		<p>Notatki:<span></span></p>
 		<pre></pre>
 	</body>
 </html>
