@@ -121,6 +121,7 @@ div[id^="karta"]:active>span
 	margin:auto;
 	margin-top:40px;
 	padding:50px;
+	text-shadow:0px 0px 25px black;
 	font-family:inconsolata;
 	font-size:25px;
 	color:gray;
