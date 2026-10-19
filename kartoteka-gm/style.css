@@ -111,6 +111,7 @@ div[id^="karta"]>span
 
 div[id^="karta"]:active>span
 	{
+		color:#5DADEC;
 	background-color:#FDAB40;
 	opacity:1;
 	}
