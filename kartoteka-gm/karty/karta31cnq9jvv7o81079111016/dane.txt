@@ -3,6 +3,7 @@ Producent: Orient<br>
 Model: Bambino v.3 gen.2<br>
 Referencja: FAC0000EW0<br>
 Data zakupu: 15.12.2018<br>
+Koszt zakupu: <span>487,03 PLN</span><br>
 <div>MECHANIZM</div>
 Typ: Automatyczny<br>
 Producent: Orient<br>
@@ -19,3 +20,5 @@ Szerokość: 41mm<br>
 Wysokość L2L: 47mm<br>
 Grubość: 11,5mm<br>
 Mocowanie paska: 21mm<br>
+<div>NOTATKI</div>
+<a>Otwórz plik</a><br>

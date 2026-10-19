@@ -17,3 +17,5 @@ Szerokość: 48mm<br>
 Grubość: 13mm<br>
 Mocowanie paska: Brak<br>
 Waga: 79g<br>
+<div>NOTATKI</div>
+<a>Otwórz plik</a><br>

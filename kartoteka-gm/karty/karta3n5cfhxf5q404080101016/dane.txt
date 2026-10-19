@@ -5,6 +5,7 @@ Referencja: PY046D<br>
 Limitacja: 086/100<br>
 Rok produkcji: 2023<br>
 Data zakupu: 18.09.2023<br>
+Koszt zakupu: <span>1469,40 PLN</span><br>
 <div>MECHANIZM</div>
 Typ: Automatyczny<br>
 Producent: Seiko<br>
@@ -24,3 +25,5 @@ Wysokość L2L: 49mm<br>
 Grubość: 14mm<br>
 Mocowanie paska: 22mm<br>
 Waga: 122g<br>
+<div>NOTATKI</div>
+<a>Otwórz plik</a><br>

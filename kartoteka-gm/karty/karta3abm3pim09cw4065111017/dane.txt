@@ -3,6 +3,7 @@ Producent: Adriatica<br>
 Model: Retro<br>
 Referencja: A1081.5156Q<br>
 Data zakupu: 2011<br>
+Koszt zakupu: <span>300-350 PLN</span><br>
 • Zegarek poza kolekcją<br>
 <div>MECHANIZM</div>
 Typ: Kwarcowy<br>
@@ -17,3 +18,5 @@ Szerokość: 39mm<br>
 Grubość: 8mm<br>
 Waga: 106g<br>
 • Bransoleta w zestawie<br>
+<div>NOTATKI</div>
+<a>Otwórz plik</a><br>

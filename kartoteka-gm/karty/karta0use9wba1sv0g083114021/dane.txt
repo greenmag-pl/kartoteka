@@ -5,6 +5,7 @@ Referencja: SSC017P1<br>
 Numer seryjny: 651487<br>
 Rok produkcji: 2016<br>
 Data zakupu: 13.10.2016<br>
+Koszt zakupu: <span>774,82 PLN</span><br>
 <div>MECHANIZM</div>
 Typ: Solarny<br>
 Producent: Seiko<br>
@@ -23,3 +24,5 @@ Wysokość L2L: 50mm<br>
 Grubość: 14mm<br>
 Mocowanie paska: 20mm<br>
 • Bransoleta w zestawie<br>
+<div>NOTATKI</div>
+<a>Otwórz plik</a><br>

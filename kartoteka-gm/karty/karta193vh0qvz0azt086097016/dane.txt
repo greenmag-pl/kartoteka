@@ -3,6 +3,7 @@ Producent: Vostok<br>
 Model: Amfibia Classic (Beczka)<br>
 Referencja: 090914M<br>
 Data zakupu: 17.12.2021<br>
+Koszt zakupu: <span>369 PLN</span><br>
 <div>MECHANIZM</div>
 Typ: Automatyczny<br>
 Producent: Vostok<br>
@@ -19,3 +20,5 @@ Wysokość L2L: 48mm<br>
 Grubość: 15mm<br>
 Mocowanie paska: 22mm<br>
 • Bransoleta w zestawie<br>
+<div>NOTATKI</div>
+<a>Otwórz plik</a><br>
