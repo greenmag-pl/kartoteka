@@ -20,8 +20,12 @@ function loadImg(target, src)
 function getDetal(full)
 {
 	$('#opis>div').eq(1).append('<span>&nbsp;</span>');
-	if (full) $('#opis span').text($('body>div[id^="karta"]').index($('#karta' + $('#opis').data('nr'))) + 1 + '/' + $('body>div[id^="karta"]').length);
-	else $('a').replaceWith('<i>Niedostępne</i>');
+	if (full) $('#opis span').first().text($('body>div[id^="karta"]').index($('#karta' + $('#opis').data('nr'))) + 1 + '/' + $('body>div[id^="karta"]').length);
+	else 
+		{
+		$('#opis span:not(:first)').text('###');
+		$('a').replaceWith('<i>Niedostępne</i>');
+		}
 	loadImg('#opis>img', 'karta' + $('#opis').data('nr'));
 }
 
@@ -114,10 +118,10 @@ $(function()
 		$('#opis').data('nr', '0');
 	});
 
-	$('#opis').on('click', 'span', function()
+	$('#opis').on('click', 'span:first', function()
 	{
 		let result;
-		if ($('#opis span').html() === '&nbsp;') result = window.location.href;
+		if ($(this).html() === '&nbsp;') result = window.location.href;
 		else
 		{
 			const url = new URL(window.location.href);
