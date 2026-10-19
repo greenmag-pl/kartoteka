@@ -23,7 +23,7 @@ function getDetal(full)
 	if (full) $('#opis>div>span').text($('body>div[id^="karta"]').index($('#karta' + $('#opis').data('nr'))) + 1 + '/' + $('body>div[id^="karta"]').length);
 	else 
 		{
-		$('#opis>span').text('###');
+		$('#opis>span').text('Niedostępne').css({'font-style':'italic','color':'gray'});
 		$('a').replaceWith('<i>Niedostępne</i>');
 		}
 	loadImg('#opis>img', 'karta' + $('#opis').data('nr'));

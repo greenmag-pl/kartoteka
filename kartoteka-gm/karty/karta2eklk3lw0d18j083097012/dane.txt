@@ -4,7 +4,7 @@ Referencja: SGEC91P1<br>
 Numer seryjny: 670157<br>
 Rok produkcji: 2006<br>
 Data zakupu: 28.08.2010<br>
-Koszt zakupu: ~980 PLN<br>
+Koszt zakupu: <span>~980 PLN</span><br>
 <div>MECHANIZM</div>
 Typ: Kwarcowy<br>
 Producent: Seiko<br>

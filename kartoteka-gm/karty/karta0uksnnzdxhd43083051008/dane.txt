@@ -5,7 +5,7 @@ Referencja: 903.091<br>
 Numer seryjny: 903.19611<br>
 Rok produkcji: 2025<br>
 Data zakupu: 26.03.2025<br>
-Koszt zakupu: 1480 PLN<br>
+Koszt zakupu: <span>1480 PLN</span><br>
 <div>MECHANIZM</div>
 Typ: Automatyczny<br>
 Producent: La Joux-Perret<br>

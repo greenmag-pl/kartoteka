@@ -3,7 +3,7 @@ Producent: Steinhart<br>
 Model: Nav. B-Uhr<br>
 Rok produkcji: 2016/2017<br>
 Data zakupu: 25.08.2017<br>
-Koszt zakupu: 2000 PLN<br>
+Koszt zakupu: <span>2000 PLN</span><br>
 <div>MECHANIZM</div>
 Typ: Manualny<br>
 Producent: ETA<br>
