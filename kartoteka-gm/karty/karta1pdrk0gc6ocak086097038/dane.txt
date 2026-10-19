@@ -4,6 +4,7 @@ Model: Chronohistoria<br>
 Limitacja: 66/150<br>
 Rok produkcji: 2021<br>
 Data zakupu: 22.12.2021<br>
+Koszt zakupu: 980 PLN<br>
 <div>MECHANIZM</div>
 Typ: Kwarcowy<br>
 Producent: Miyota<br>
