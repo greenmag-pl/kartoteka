@@ -179,7 +179,7 @@ div[id^="karta"]:active>span
 	color:#FDAB40;
 	}
 
-#opis span:first-of-type
+#opis>div>span
 	{
 	float:right;
 	padding-right:50px;
@@ -193,7 +193,7 @@ div[id^="karta"]:active>span
 	transition:all 0.25s;
 	}
 
-#opis span:active:first-of-type
+#opis>div>span:active
 	{
 	color:silver;
 	opacity:1;
