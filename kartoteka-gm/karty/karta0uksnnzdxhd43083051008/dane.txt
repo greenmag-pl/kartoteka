@@ -5,7 +5,6 @@ Referencja: 903.091<br>
 Numer seryjny: 903.19611<br>
 Rok produkcji: 2025<br>
 Data zakupu: 26.03.2025<br>
-Koszt zakupu: <span>1480 PLN</span><br>
 <div>MECHANIZM</div>
 Typ: Automatyczny<br>
 Producent: La Joux-Perret<br>
@@ -27,5 +26,3 @@ Grubość: 14,5mm<br>
 Mocowanie paska: 22mm<br>
 Waga: 84g<br>
 • Bransoleta w zestawie<br>
-<div>NOTATKI</div>
-<a>Otwórz plik</a><br>
