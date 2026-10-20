@@ -23,9 +23,7 @@ function getDetal(full)
 	if (full) $('#opis>div>span').text($('body>div[id^="karta"]').index($('#karta' + $('#opis').data('nr'))) + 1 + '/' + $('body>div[id^="karta"]').length);
 	else 
 	{
-		$('#opis').html(function(_, html){
-			return html.replace(/(Koszt zakupu: )(.*?)(<br>)/, '$1<span style="font-style:italic; color:gray;">Niedostępny</span>$3');
-		});
+		$('#opis').html($('#opis').html().replace(/(Koszt zakupu: )(.*?)(<br>)/, '$1<span style="font-style:italic; color:gray;">Niedostępny</span>$3'));
 		$('a').replaceWith('<i>Niedostępne</i>');
 	}
 	loadImg('#opis>img', 'karta' + $('#opis').data('nr'));
