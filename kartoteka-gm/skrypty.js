@@ -24,7 +24,7 @@ function getDetal(full)
 	else 
 	{
 		$('#opis').html(function(_, html){
-			return html.replace(/(Koszt: )(.*?)(<br>)/, '$1<span style="font-style:italic; color:gray;">Niedostępny</span>$3');
+			return html.replace(/(Koszt zakupu: )(.*?)(<br>)/, '$1<span style="font-style:italic; color:gray;">Niedostępny</span>$3');
 		});
 		$('a').replaceWith('<i>Niedostępne</i>');
 	}
