@@ -11,7 +11,7 @@
 				$('p>span').text(' ' + new URLSearchParams(location.search).get('nazwa'));
 				$.get('karty/karta' + new URLSearchParams(location.search).get('karta') + '/notatki.txt', function(txt)
 				{
-					$('pre').text(txt).fadeIn('normal');
+					$('pre').text(txt).fadeIn('slow');
 				});
 			});
 		</script>
