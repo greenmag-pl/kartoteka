@@ -4,7 +4,7 @@ Model: Cali<br>
 Referencja: V:02<br>
 Rok produkcji: 2025<br>
 Data zakupu: 27.11.2025<br>
-Koszt zakupu: <span>2490 PLN</span><br>
+Koszt zakupu: 2490 PLN<br>
 <div>MECHANIZM</div>
 Typ: Automatyczny<br>
 Producent: Seiko<br>
